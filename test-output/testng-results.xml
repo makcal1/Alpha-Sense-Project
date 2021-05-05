@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-05-05T02:28:27 CEST" name="Default suite" finished-at="2021-05-05T02:28:32 CEST" duration-ms="5190">
+    <groups>
+    </groups>
+    <test started-at="2021-05-05T02:28:27 CEST" name="Default test" finished-at="2021-05-05T02:28:32 CEST" duration-ms="5190">
+      <class name="com.qa.spinent.testpages.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.spinent.testpages.LoginPageTest@5a45133e]" started-at="2021-05-05T02:28:27 CEST" name="setUp" finished-at="2021-05-05T02:28:30 CEST" duration-ms="3166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyGreenolorLoginButtonTest()[pri:4, instance:com.qa.spinent.testpages.LoginPageTest@5a45133e]" started-at="2021-05-05T02:28:30 CEST" name="verifyGreenolorLoginButtonTest" description="VERIFICATION OF GREEN LOGIN-BUTTON IN THE LOGIN PAGE " finished-at="2021-05-05T02:28:31 CEST" duration-ms="1173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGreenolorLoginButtonTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.spinent.testpages.LoginPageTest@5a45133e]" started-at="2021-05-05T02:28:31 CEST" name="tearDown" finished-at="2021-05-05T02:28:32 CEST" duration-ms="820" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.spinent.testpages.LoginPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

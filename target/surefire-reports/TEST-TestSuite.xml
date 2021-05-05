@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="28" failures="2" name="TestSuite" time="86.826" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_281\bin"/>
+    <property name="java.vm.version" value="25.281-b09"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\muham\eclipse-workspace\QASpinentProject"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CA"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\muham\eclipse-workspace\QASpinentProject"/>
+    <property name="java.runtime.version" value="1.8.0_281-b09"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jre1.8.0_281\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\muham\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\apache-maven-3.6.3\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python39\Scripts\;C:\Python39\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Calibre2\;C:\Program Files (x86)\Brackets\command;C:\\apache-maven-3.6.3-bin.zip\apache-maven-3.6.3\bin;C:\apache-maven-3.6.3\bin;C:\allure-commandline-2.13.7\allure-2.13.7\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\nodejs\;C:\ProgramData\chocolatey\bin;C:\apache-maven-3.6.3\bin;C:\Program Files\apache-maven-3.8.1\bin;%JAVA_HOME%\bin;C:\Program Files\apache-maven-3.8.1\bin\bin;C:\Program Files\Java\jdk1.8.0_281\bin;C:\Program Files\Java\jre1.8.0_281\bin;C:\Hugo\bin;;."/>
+    <property name="maven.conf" value="C:\apache-maven-3.6.3\bin\../conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\apache-maven-3.6.3\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\muham"/>
+    <property name="user.timezone" value="Europe/Belgrade"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="muham"/>
+    <property name="java.class.path" value="C:\apache-maven-3.6.3\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jre1.8.0_281"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_281"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jre1.8.0_281\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jre1.8.0_281\lib\resources.jar;C:\Program Files\Java\jre1.8.0_281\lib\rt.jar;C:\Program Files\Java\jre1.8.0_281\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_281\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_281\lib\jce.jar;C:\Program Files\Java\jre1.8.0_281\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_281\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_281\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\apache-maven-3.6.3\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.qa.spinent.testpages.AccountLogoutPageTest" name="logOutFunctionTest" time="1.09"/>
+  <testcase classname="com.qa.spinent.testpages.AccountLogoutPageTest" name="logOutUrlVerificationTest" time="0.007"/>
+  <testcase classname="com.qa.spinent.testpages.HomePageTest" name="verifyHomePageTitle" time="0.013"/>
+  <testcase classname="com.qa.spinent.testpages.HomePageTest" name="introToSportsTechButtonTest" time="1.035"/>
+  <testcase classname="com.qa.spinent.testpages.HomePageTest" name="knowYourselfButtonTest" time="1.038"/>
+  <testcase classname="com.qa.spinent.testpages.HomePageTest" name="determineProblemsButtonTest" time="1.028"/>
+  <testcase classname="com.qa.spinent.testpages.HomePageTest" name="askToCustomerButtonTest" time="1.037"/>
+  <testcase classname="com.qa.spinent.testpages.HomePageTest" name="generateIdeasButtonTest" time="1.032"/>
+  <testcase classname="com.qa.spinent.testpages.HomePageTest" name="preapareMVPButtonTest" time="1.033"/>
+  <testcase classname="com.qa.spinent.testpages.HomePageTest" name="givePresentationButtonTest" time="0.977"/>
+  <testcase classname="com.qa.spinent.testpages.HomePageTest" name="belowButtonAblemsTest" time="0.996"/>
+  <testcase classname="com.qa.spinent.testpages.HomePageTest" name="languageButtonTest" time="0.992"/>
+  <testcase classname="com.qa.spinent.testpages.HomePageTest" name="userAccountNamesButtonTest" time="0.979"/>
+  <testcase classname="com.qa.spinent.testpages.HomePageTest" name="printCertificateButtonTest" time="0.991"/>
+  <testcase classname="com.qa.spinent.testpages.LoginPageTest" name="verifyLoginPageTitleTest" time="0.006"/>
+  <testcase classname="com.qa.spinent.testpages.LoginPageTest" name="verifyLoginPageUrlTest" time="0.009"/>
+  <testcase classname="com.qa.spinent.testpages.LoginPageTest" name="verifyRedColorLoginButtonTest" time="0.985"/>
+  <testcase classname="com.qa.spinent.testpages.LoginPageTest" name="verifyGreenolorLoginButtonTest" time="0.978"/>
+  <testcase classname="com.qa.spinent.testpages.LoginPageUserSecurityTest" name="userSecurity" time="5.258"/>
+  <testcase classname="com.qa.spinent.testpages.LoginPageUserSecurityTest" name="userSecurity" time="6.219"/>
+  <testcase classname="com.qa.spinent.testpages.LoginPageUserSecurityTest" name="userSecurity" time="6.099"/>
+  <testcase classname="com.qa.spinent.testpages.LoginPageUserSecurityTest" name="userSecurity" time="6.102"/>
+  <testcase classname="com.qa.spinent.testpages.LoginPageUserSecurityTest" name="userSecurity" time="6.149"/>
+  <testcase classname="com.qa.spinent.testpages.LoginPageUserSecurityTest" name="userSecurity" time="6.119"/>
+  <testcase classname="com.qa.spinent.testpages.LoginPageUserSecurityTest" name="userSecurity" time="6.126"/>
+  <testcase classname="com.qa.spinent.testpages.LoginPageUserSecurityTest" name="userSecurity" time="6.109"/>
+  <testcase classname="com.qa.spinent.testpages.MyReportPageTest" name="verifyMyReportPageTableVisibility" time="12.212">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at com.qa.spinent.testpages.MyReportPageTest.verifyMyReportPageTableVisibility(MyReportPageTest.java:51)
+</failure>
+    <system-out>some exception occured while creating the web element...
+some exception occured while isDisplayed
+</system-out>
+    <system-err>[1620174704.053][WARNING]: Timed out connecting to Chrome, retrying...
+</system-err>
+  </testcase>
+  <testcase classname="com.qa.spinent.testpages.MyReportPageTest" name="verifyMyReportPageTable" time="12.207">
+    <failure message="chrome not reachable
+  (Session info: chrome=90.0.4430.93)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-35PKLNE&apos;, ip: &apos;192.168.0.45&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\muham\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53856}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: db8c7965f8fe1b4e2b9b821f5e376e3c" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=90.0.4430.93)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-35PKLNE&apos;, ip: &apos;192.168.0.45&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\muham\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53856}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: db8c7965f8fe1b4e2b9b821f5e376e3c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:287)
+	at com.qa.spinent.pages.MyReportPage.myreportPageUrl(MyReportPage.java:33)
+	at com.qa.spinent.testpages.MyReportPageTest.verifyMyReportPageTable(MyReportPageTest.java:57)
+</failure>
+    <system-err>[1620174716.253][WARNING]: Timed out connecting to Chrome, retrying...
+</system-err>
+  </testcase>
+</testsuite>
