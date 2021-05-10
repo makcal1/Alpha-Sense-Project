@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="28" passed="26">
+<testng-results skipped="0" failed="0" ignored="0" total="28" passed="28">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="122026" started-at="2021-05-05T02:30:06 CEST" finished-at="2021-05-05T02:32:08 CEST">
+  <suite name="Command line suite" duration-ms="108735" started-at="2021-05-09T12:17:38 CEST" finished-at="2021-05-09T12:19:27 CEST">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="122026" started-at="2021-05-05T02:30:06 CEST" finished-at="2021-05-05T02:32:08 CEST">
+    <test name="Command line test" duration-ms="108735" started-at="2021-05-09T12:17:38 CEST" finished-at="2021-05-09T12:19:27 CEST">
       <class name="com.qa.spinent.testpages.LoginPageUserSecurityTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.spinent.testpages.LoginPageUserSecurityTest@64bf3bbf]" name="setUp" is-config="true" duration-ms="2424" started-at="2021-05-05T02:30:26 CEST" finished-at="2021-05-05T02:30:28 CEST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.spinent.testpages.LoginPageUserSecurityTest@64bf3bbf]" name="setUp" is-config="true" duration-ms="5557" started-at="2021-05-09T12:18:03 CEST" finished-at="2021-05-09T12:18:08 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="userSecurity(java.lang.String, java.lang.String)[pri:0, instance:com.qa.spinent.testpages.LoginPageUserSecurityTest@64bf3bbf]" name="userSecurity" duration-ms="5257" started-at="2021-05-05T02:30:51 CEST" description="Testing invalid datas by sending wrong user information. Error message will be verified after sending wrong user information from the excel file." data-provider="getLoginInvalidData" finished-at="2021-05-05T02:30:57 CEST">
+        <test-method status="PASS" signature="userSecurity(java.lang.String, java.lang.String)[pri:0, instance:com.qa.spinent.testpages.LoginPageUserSecurityTest@64bf3bbf]" name="userSecurity" duration-ms="5149" started-at="2021-05-09T12:18:35 CEST" description="Testing invalid datas by sending wrong user information. Error message will be verified after sending wrong user information from the excel file." data-provider="getLoginInvalidData" finished-at="2021-05-09T12:18:40 CEST">
           <params>
             <param index="0">
               <value>
@@ -27,7 +27,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userSecurity -->
-        <test-method status="PASS" signature="userSecurity(java.lang.String, java.lang.String)[pri:0, instance:com.qa.spinent.testpages.LoginPageUserSecurityTest@64bf3bbf]" name="userSecurity" duration-ms="6220" started-at="2021-05-05T02:30:57 CEST" description="Testing invalid datas by sending wrong user information. Error message will be verified after sending wrong user information from the excel file." data-provider="getLoginInvalidData" finished-at="2021-05-05T02:31:03 CEST">
+        <test-method status="PASS" signature="userSecurity(java.lang.String, java.lang.String)[pri:0, instance:com.qa.spinent.testpages.LoginPageUserSecurityTest@64bf3bbf]" name="userSecurity" duration-ms="6082" started-at="2021-05-09T12:18:40 CEST" description="Testing invalid datas by sending wrong user information. Error message will be verified after sending wrong user information from the excel file." data-provider="getLoginInvalidData" finished-at="2021-05-09T12:18:46 CEST">
           <params>
             <param index="0">
               <value>
@@ -43,7 +43,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userSecurity -->
-        <test-method status="PASS" signature="userSecurity(java.lang.String, java.lang.String)[pri:0, instance:com.qa.spinent.testpages.LoginPageUserSecurityTest@64bf3bbf]" name="userSecurity" duration-ms="6099" started-at="2021-05-05T02:31:03 CEST" description="Testing invalid datas by sending wrong user information. Error message will be verified after sending wrong user information from the excel file." data-provider="getLoginInvalidData" finished-at="2021-05-05T02:31:09 CEST">
+        <test-method status="PASS" signature="userSecurity(java.lang.String, java.lang.String)[pri:0, instance:com.qa.spinent.testpages.LoginPageUserSecurityTest@64bf3bbf]" name="userSecurity" duration-ms="6048" started-at="2021-05-09T12:18:46 CEST" description="Testing invalid datas by sending wrong user information. Error message will be verified after sending wrong user information from the excel file." data-provider="getLoginInvalidData" finished-at="2021-05-09T12:18:52 CEST">
           <params>
             <param index="0">
               <value>
@@ -59,7 +59,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userSecurity -->
-        <test-method status="PASS" signature="userSecurity(java.lang.String, java.lang.String)[pri:0, instance:com.qa.spinent.testpages.LoginPageUserSecurityTest@64bf3bbf]" name="userSecurity" duration-ms="6102" started-at="2021-05-05T02:31:09 CEST" description="Testing invalid datas by sending wrong user information. Error message will be verified after sending wrong user information from the excel file." data-provider="getLoginInvalidData" finished-at="2021-05-05T02:31:15 CEST">
+        <test-method status="PASS" signature="userSecurity(java.lang.String, java.lang.String)[pri:0, instance:com.qa.spinent.testpages.LoginPageUserSecurityTest@64bf3bbf]" name="userSecurity" duration-ms="6068" started-at="2021-05-09T12:18:52 CEST" description="Testing invalid datas by sending wrong user information. Error message will be verified after sending wrong user information from the excel file." data-provider="getLoginInvalidData" finished-at="2021-05-09T12:18:58 CEST">
           <params>
             <param index="0">
               <value>
@@ -75,7 +75,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userSecurity -->
-        <test-method status="PASS" signature="userSecurity(java.lang.String, java.lang.String)[pri:0, instance:com.qa.spinent.testpages.LoginPageUserSecurityTest@64bf3bbf]" name="userSecurity" duration-ms="6148" started-at="2021-05-05T02:31:15 CEST" description="Testing invalid datas by sending wrong user information. Error message will be verified after sending wrong user information from the excel file." data-provider="getLoginInvalidData" finished-at="2021-05-05T02:31:21 CEST">
+        <test-method status="PASS" signature="userSecurity(java.lang.String, java.lang.String)[pri:0, instance:com.qa.spinent.testpages.LoginPageUserSecurityTest@64bf3bbf]" name="userSecurity" duration-ms="6046" started-at="2021-05-09T12:18:58 CEST" description="Testing invalid datas by sending wrong user information. Error message will be verified after sending wrong user information from the excel file." data-provider="getLoginInvalidData" finished-at="2021-05-09T12:19:04 CEST">
           <params>
             <param index="0">
               <value>
@@ -91,7 +91,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userSecurity -->
-        <test-method status="PASS" signature="userSecurity(java.lang.String, java.lang.String)[pri:0, instance:com.qa.spinent.testpages.LoginPageUserSecurityTest@64bf3bbf]" name="userSecurity" duration-ms="6119" started-at="2021-05-05T02:31:21 CEST" description="Testing invalid datas by sending wrong user information. Error message will be verified after sending wrong user information from the excel file." data-provider="getLoginInvalidData" finished-at="2021-05-05T02:31:27 CEST">
+        <test-method status="PASS" signature="userSecurity(java.lang.String, java.lang.String)[pri:0, instance:com.qa.spinent.testpages.LoginPageUserSecurityTest@64bf3bbf]" name="userSecurity" duration-ms="6037" started-at="2021-05-09T12:19:04 CEST" description="Testing invalid datas by sending wrong user information. Error message will be verified after sending wrong user information from the excel file." data-provider="getLoginInvalidData" finished-at="2021-05-09T12:19:10 CEST">
           <params>
             <param index="0">
               <value>
@@ -107,7 +107,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userSecurity -->
-        <test-method status="PASS" signature="userSecurity(java.lang.String, java.lang.String)[pri:0, instance:com.qa.spinent.testpages.LoginPageUserSecurityTest@64bf3bbf]" name="userSecurity" duration-ms="6126" started-at="2021-05-05T02:31:27 CEST" description="Testing invalid datas by sending wrong user information. Error message will be verified after sending wrong user information from the excel file." data-provider="getLoginInvalidData" finished-at="2021-05-05T02:31:33 CEST">
+        <test-method status="PASS" signature="userSecurity(java.lang.String, java.lang.String)[pri:0, instance:com.qa.spinent.testpages.LoginPageUserSecurityTest@64bf3bbf]" name="userSecurity" duration-ms="6105" started-at="2021-05-09T12:19:10 CEST" description="Testing invalid datas by sending wrong user information. Error message will be verified after sending wrong user information from the excel file." data-provider="getLoginInvalidData" finished-at="2021-05-09T12:19:16 CEST">
           <params>
             <param index="0">
               <value>
@@ -123,7 +123,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userSecurity -->
-        <test-method status="PASS" signature="userSecurity(java.lang.String, java.lang.String)[pri:0, instance:com.qa.spinent.testpages.LoginPageUserSecurityTest@64bf3bbf]" name="userSecurity" duration-ms="6109" started-at="2021-05-05T02:31:33 CEST" description="Testing invalid datas by sending wrong user information. Error message will be verified after sending wrong user information from the excel file." data-provider="getLoginInvalidData" finished-at="2021-05-05T02:31:40 CEST">
+        <test-method status="PASS" signature="userSecurity(java.lang.String, java.lang.String)[pri:0, instance:com.qa.spinent.testpages.LoginPageUserSecurityTest@64bf3bbf]" name="userSecurity" duration-ms="6166" started-at="2021-05-09T12:19:16 CEST" description="Testing invalid datas by sending wrong user information. Error message will be verified after sending wrong user information from the excel file." data-provider="getLoginInvalidData" finished-at="2021-05-09T12:19:22 CEST">
           <params>
             <param index="0">
               <value>
@@ -139,252 +139,127 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userSecurity -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.spinent.testpages.LoginPageUserSecurityTest@64bf3bbf]" name="tearDown" is-config="true" duration-ms="792" started-at="2021-05-05T02:32:06 CEST" finished-at="2021-05-05T02:32:07 CEST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.spinent.testpages.LoginPageUserSecurityTest@64bf3bbf]" name="tearDown" is-config="true" duration-ms="654" started-at="2021-05-09T12:19:25 CEST" finished-at="2021-05-09T12:19:26 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.spinent.testpages.LoginPageUserSecurityTest -->
       <class name="com.qa.spinent.testpages.AccountLogoutPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.spinent.testpages.AccountLogoutPageTest@20322d26]" name="setUp" is-config="true" duration-ms="6715" started-at="2021-05-05T02:30:06 CEST" finished-at="2021-05-05T02:30:12 CEST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.spinent.testpages.AccountLogoutPageTest@20322d26]" name="setUp" is-config="true" duration-ms="10113" started-at="2021-05-09T12:17:38 CEST" finished-at="2021-05-09T12:17:48 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="logOutFunctionTest()[pri:1, instance:com.qa.spinent.testpages.AccountLogoutPageTest@20322d26]" name="logOutFunctionTest" duration-ms="1087" started-at="2021-05-05T02:30:36 CEST" finished-at="2021-05-05T02:30:37 CEST">
+        <test-method status="PASS" signature="logOutFunctionTest()[pri:1, instance:com.qa.spinent.testpages.AccountLogoutPageTest@20322d26]" name="logOutFunctionTest" duration-ms="1941" started-at="2021-05-09T12:18:18 CEST" finished-at="2021-05-09T12:18:20 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutFunctionTest -->
-        <test-method status="PASS" signature="logOutUrlVerificationTest()[pri:2, instance:com.qa.spinent.testpages.AccountLogoutPageTest@20322d26]" name="logOutUrlVerificationTest" duration-ms="6" started-at="2021-05-05T02:30:37 CEST" finished-at="2021-05-05T02:30:37 CEST">
+        <test-method status="PASS" signature="logOutUrlVerificationTest()[pri:2, instance:com.qa.spinent.testpages.AccountLogoutPageTest@20322d26]" name="logOutUrlVerificationTest" duration-ms="21" started-at="2021-05-09T12:18:20 CEST" finished-at="2021-05-09T12:18:20 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutUrlVerificationTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.spinent.testpages.AccountLogoutPageTest@20322d26]" name="tearDown" is-config="true" duration-ms="780" started-at="2021-05-05T02:32:04 CEST" finished-at="2021-05-05T02:32:05 CEST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.spinent.testpages.AccountLogoutPageTest@20322d26]" name="tearDown" is-config="true" duration-ms="714" started-at="2021-05-09T12:19:23 CEST" finished-at="2021-05-09T12:19:24 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.spinent.testpages.AccountLogoutPageTest -->
       <class name="com.qa.spinent.testpages.MyReportPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.spinent.testpages.MyReportPageTest@55d56113]" name="setUp" is-config="true" duration-ms="7673" started-at="2021-05-05T02:30:28 CEST" finished-at="2021-05-05T02:30:36 CEST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.spinent.testpages.MyReportPageTest@55d56113]" name="setUp" is-config="true" duration-ms="9425" started-at="2021-05-09T12:18:08 CEST" finished-at="2021-05-09T12:18:18 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="verifyMyReportPageTableVisibility()[pri:1, instance:com.qa.spinent.testpages.MyReportPageTest@55d56113]" name="verifyMyReportPageTableVisibility" duration-ms="12206" started-at="2021-05-05T02:31:40 CEST" finished-at="2021-05-05T02:31:52 CEST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at org.testng.Assert.assertTrue(Assert.java:55)
-at com.qa.spinent.testpages.MyReportPageTest.verifyMyReportPageTableVisibility(MyReportPageTest.java:51)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="verifyMyReportPageTableVisibility()[pri:1, instance:com.qa.spinent.testpages.MyReportPageTest@55d56113]" name="verifyMyReportPageTableVisibility" duration-ms="986" started-at="2021-05-09T12:19:22 CEST" finished-at="2021-05-09T12:19:23 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMyReportPageTableVisibility -->
-        <test-method status="FAIL" signature="verifyMyReportPageTable()[pri:2, instance:com.qa.spinent.testpages.MyReportPageTest@55d56113]" name="verifyMyReportPageTable" duration-ms="12208" started-at="2021-05-05T02:31:52 CEST" finished-at="2021-05-05T02:32:04 CEST">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[chrome not reachable
-  (Session info: chrome=90.0.4430.93)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-35PKLNE', ip: '192.168.0.45', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\muham\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53856}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: db8c7965f8fe1b4e2b9b821f5e376e3c]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=90.0.4430.93)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-35PKLNE', ip: '192.168.0.45', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\muham\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53856}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: db8c7965f8fe1b4e2b9b821f5e376e3c
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:287)
-at com.qa.spinent.pages.MyReportPage.myreportPageUrl(MyReportPage.java:33)
-at com.qa.spinent.testpages.MyReportPageTest.verifyMyReportPageTable(MyReportPageTest.java:57)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method status="PASS" signature="verifyMyReportPageTable()[pri:2, instance:com.qa.spinent.testpages.MyReportPageTest@55d56113]" name="verifyMyReportPageTable" duration-ms="5" started-at="2021-05-09T12:19:23 CEST" finished-at="2021-05-09T12:19:23 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMyReportPageTable -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.spinent.testpages.MyReportPageTest@55d56113]" name="tearDown" is-config="true" duration-ms="573" started-at="2021-05-05T02:32:07 CEST" finished-at="2021-05-05T02:32:08 CEST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.spinent.testpages.MyReportPageTest@55d56113]" name="tearDown" is-config="true" duration-ms="669" started-at="2021-05-09T12:19:26 CEST" finished-at="2021-05-09T12:19:27 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.spinent.testpages.MyReportPageTest -->
       <class name="com.qa.spinent.testpages.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.spinent.testpages.LoginPageTest@64bfbc86]" name="setUp" is-config="true" duration-ms="2216" started-at="2021-05-05T02:30:23 CEST" finished-at="2021-05-05T02:30:26 CEST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.spinent.testpages.LoginPageTest@64bfbc86]" name="setUp" is-config="true" duration-ms="2203" started-at="2021-05-09T12:18:01 CEST" finished-at="2021-05-09T12:18:03 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:1, instance:com.qa.spinent.testpages.LoginPageTest@64bfbc86]" name="verifyLoginPageTitleTest" duration-ms="6" started-at="2021-05-05T02:30:48 CEST" description="LOGIN PAGE TITLE PRESENCE FUNCTIONALITY" finished-at="2021-05-05T02:30:48 CEST">
+        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:1, instance:com.qa.spinent.testpages.LoginPageTest@64bfbc86]" name="verifyLoginPageTitleTest" duration-ms="6" started-at="2021-05-09T12:18:32 CEST" description="LOGIN PAGE TITLE PRESENCE FUNCTIONALITY" finished-at="2021-05-09T12:18:32 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPageTitleTest -->
-        <test-method status="PASS" signature="verifyLoginPageUrlTest()[pri:2, instance:com.qa.spinent.testpages.LoginPageTest@64bfbc86]" name="verifyLoginPageUrlTest" duration-ms="10" started-at="2021-05-05T02:30:48 CEST" description="LOGIN PAGE URL FUNCTIONALITY TEST" finished-at="2021-05-05T02:30:48 CEST">
+        <test-method status="PASS" signature="verifyLoginPageUrlTest()[pri:2, instance:com.qa.spinent.testpages.LoginPageTest@64bfbc86]" name="verifyLoginPageUrlTest" duration-ms="8" started-at="2021-05-09T12:18:32 CEST" description="LOGIN PAGE URL FUNCTIONALITY TEST" finished-at="2021-05-09T12:18:32 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPageUrlTest -->
-        <test-method status="PASS" signature="verifyRedColorLoginButtonTest()[pri:3, instance:com.qa.spinent.testpages.LoginPageTest@64bfbc86]" name="verifyRedColorLoginButtonTest" duration-ms="986" started-at="2021-05-05T02:30:48 CEST" description="VERIFICATION OF RED LOGIN-BUTTON IN THE LOGIN PAGE " finished-at="2021-05-05T02:30:49 CEST">
+        <test-method status="PASS" signature="verifyRedColorLoginButtonTest()[pri:3, instance:com.qa.spinent.testpages.LoginPageTest@64bfbc86]" name="verifyRedColorLoginButtonTest" duration-ms="984" started-at="2021-05-09T12:18:32 CEST" description="VERIFICATION OF RED LOGIN-BUTTON IN THE LOGIN PAGE " finished-at="2021-05-09T12:18:33 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRedColorLoginButtonTest -->
-        <test-method status="PASS" signature="verifyGreenolorLoginButtonTest()[pri:4, instance:com.qa.spinent.testpages.LoginPageTest@64bfbc86]" name="verifyGreenolorLoginButtonTest" duration-ms="978" started-at="2021-05-05T02:30:49 CEST" description="VERIFICATION OF GREEN LOGIN-BUTTON IN THE LOGIN PAGE " finished-at="2021-05-05T02:30:50 CEST">
+        <test-method status="PASS" signature="verifyGreenolorLoginButtonTest()[pri:4, instance:com.qa.spinent.testpages.LoginPageTest@64bfbc86]" name="verifyGreenolorLoginButtonTest" duration-ms="1001" started-at="2021-05-09T12:18:33 CEST" description="VERIFICATION OF GREEN LOGIN-BUTTON IN THE LOGIN PAGE " finished-at="2021-05-09T12:18:34 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGreenolorLoginButtonTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.spinent.testpages.LoginPageTest@64bfbc86]" name="tearDown" is-config="true" duration-ms="733" started-at="2021-05-05T02:32:05 CEST" finished-at="2021-05-05T02:32:06 CEST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.spinent.testpages.LoginPageTest@64bfbc86]" name="tearDown" is-config="true" duration-ms="702" started-at="2021-05-09T12:19:25 CEST" finished-at="2021-05-09T12:19:25 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.spinent.testpages.LoginPageTest -->
       <class name="com.qa.spinent.testpages.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.spinent.testpages.HomePageTest@192b07fd]" name="setUp" is-config="true" duration-ms="11117" started-at="2021-05-05T02:30:12 CEST" finished-at="2021-05-05T02:30:23 CEST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.spinent.testpages.HomePageTest@192b07fd]" name="setUp" is-config="true" duration-ms="12486" started-at="2021-05-09T12:17:48 CEST" finished-at="2021-05-09T12:18:01 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyHomePageTitle()[pri:1, instance:com.qa.spinent.testpages.HomePageTest@192b07fd]" name="verifyHomePageTitle" duration-ms="12" started-at="2021-05-05T02:30:37 CEST" description="Home Page Title will be tested" finished-at="2021-05-05T02:30:37 CEST">
+        <test-method status="PASS" signature="verifyHomePageTitle()[pri:1, instance:com.qa.spinent.testpages.HomePageTest@192b07fd]" name="verifyHomePageTitle" duration-ms="49" started-at="2021-05-09T12:18:20 CEST" description="Home Page Title will be tested" finished-at="2021-05-09T12:18:20 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomePageTitle -->
-        <test-method status="PASS" signature="introToSportsTechButtonTest()[pri:2, instance:com.qa.spinent.testpages.HomePageTest@192b07fd]" name="introToSportsTechButtonTest" duration-ms="1035" started-at="2021-05-05T02:30:37 CEST" description="The button function will be tested to see if it is clickable or not!" finished-at="2021-05-05T02:30:38 CEST">
+        <test-method status="PASS" signature="introToSportsTechButtonTest()[pri:2, instance:com.qa.spinent.testpages.HomePageTest@192b07fd]" name="introToSportsTechButtonTest" duration-ms="1349" started-at="2021-05-09T12:18:20 CEST" description="The button function will be tested to see if it is clickable or not!" finished-at="2021-05-09T12:18:21 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- introToSportsTechButtonTest -->
-        <test-method status="PASS" signature="knowYourselfButtonTest()[pri:3, instance:com.qa.spinent.testpages.HomePageTest@192b07fd]" name="knowYourselfButtonTest" duration-ms="1038" started-at="2021-05-05T02:30:38 CEST" description="The button function will be tested to see if it is clickable or not!" finished-at="2021-05-05T02:30:39 CEST">
+        <test-method status="PASS" signature="knowYourselfButtonTest()[pri:3, instance:com.qa.spinent.testpages.HomePageTest@192b07fd]" name="knowYourselfButtonTest" duration-ms="1052" started-at="2021-05-09T12:18:21 CEST" description="The button function will be tested to see if it is clickable or not!" finished-at="2021-05-09T12:18:22 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- knowYourselfButtonTest -->
-        <test-method status="PASS" signature="determineProblemsButtonTest()[pri:4, instance:com.qa.spinent.testpages.HomePageTest@192b07fd]" name="determineProblemsButtonTest" duration-ms="1027" started-at="2021-05-05T02:30:39 CEST" description="The button function will be tested to see if it is clickable or not!" finished-at="2021-05-05T02:30:40 CEST">
+        <test-method status="PASS" signature="determineProblemsButtonTest()[pri:4, instance:com.qa.spinent.testpages.HomePageTest@192b07fd]" name="determineProblemsButtonTest" duration-ms="1394" started-at="2021-05-09T12:18:22 CEST" description="The button function will be tested to see if it is clickable or not!" finished-at="2021-05-09T12:18:24 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- determineProblemsButtonTest -->
-        <test-method status="PASS" signature="askToCustomerButtonTest()[pri:5, instance:com.qa.spinent.testpages.HomePageTest@192b07fd]" name="askToCustomerButtonTest" duration-ms="1036" started-at="2021-05-05T02:30:40 CEST" description="The button function will be tested to see if it is clickable or not!" finished-at="2021-05-05T02:30:41 CEST">
+        <test-method status="PASS" signature="askToCustomerButtonTest()[pri:5, instance:com.qa.spinent.testpages.HomePageTest@192b07fd]" name="askToCustomerButtonTest" duration-ms="1222" started-at="2021-05-09T12:18:24 CEST" description="The button function will be tested to see if it is clickable or not!" finished-at="2021-05-09T12:18:25 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- askToCustomerButtonTest -->
-        <test-method status="PASS" signature="generateIdeasButtonTest()[pri:6, instance:com.qa.spinent.testpages.HomePageTest@192b07fd]" name="generateIdeasButtonTest" duration-ms="1032" started-at="2021-05-05T02:30:41 CEST" description="The button function will be tested to see if it is clickable or not!" finished-at="2021-05-05T02:30:42 CEST">
+        <test-method status="PASS" signature="generateIdeasButtonTest()[pri:6, instance:com.qa.spinent.testpages.HomePageTest@192b07fd]" name="generateIdeasButtonTest" duration-ms="1063" started-at="2021-05-09T12:18:25 CEST" description="The button function will be tested to see if it is clickable or not!" finished-at="2021-05-09T12:18:26 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateIdeasButtonTest -->
-        <test-method status="PASS" signature="preapareMVPButtonTest()[pri:7, instance:com.qa.spinent.testpages.HomePageTest@192b07fd]" name="preapareMVPButtonTest" duration-ms="1033" started-at="2021-05-05T02:30:42 CEST" description="The button function will be tested to see if it is clickable or not!" finished-at="2021-05-05T02:30:43 CEST">
+        <test-method status="PASS" signature="preapareMVPButtonTest()[pri:7, instance:com.qa.spinent.testpages.HomePageTest@192b07fd]" name="preapareMVPButtonTest" duration-ms="1000" started-at="2021-05-09T12:18:26 CEST" description="The button function will be tested to see if it is clickable or not!" finished-at="2021-05-09T12:18:27 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preapareMVPButtonTest -->
-        <test-method status="PASS" signature="givePresentationButtonTest()[pri:8, instance:com.qa.spinent.testpages.HomePageTest@192b07fd]" name="givePresentationButtonTest" duration-ms="977" started-at="2021-05-05T02:30:43 CEST" description="The button function will be tested to see if it is clickable or not!" finished-at="2021-05-05T02:30:44 CEST">
+        <test-method status="PASS" signature="givePresentationButtonTest()[pri:8, instance:com.qa.spinent.testpages.HomePageTest@192b07fd]" name="givePresentationButtonTest" duration-ms="1000" started-at="2021-05-09T12:18:27 CEST" description="The button function will be tested to see if it is clickable or not!" finished-at="2021-05-09T12:18:28 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- givePresentationButtonTest -->
-        <test-method status="PASS" signature="belowButtonAblemsTest()[pri:9, instance:com.qa.spinent.testpages.HomePageTest@192b07fd]" name="belowButtonAblemsTest" duration-ms="997" started-at="2021-05-05T02:30:44 CEST" description="The button function will be tested to see if it is clickable or not!" finished-at="2021-05-05T02:30:45 CEST">
+        <test-method status="PASS" signature="belowButtonAblemsTest()[pri:9, instance:com.qa.spinent.testpages.HomePageTest@192b07fd]" name="belowButtonAblemsTest" duration-ms="997" started-at="2021-05-09T12:18:28 CEST" description="The button function will be tested to see if it is clickable or not!" finished-at="2021-05-09T12:18:29 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- belowButtonAblemsTest -->
-        <test-method status="PASS" signature="languageButtonTest()[pri:10, instance:com.qa.spinent.testpages.HomePageTest@192b07fd]" name="languageButtonTest" duration-ms="993" started-at="2021-05-05T02:30:45 CEST" description="The button function will be tested to see if it is clickable or not!" finished-at="2021-05-05T02:30:46 CEST">
+        <test-method status="PASS" signature="languageButtonTest()[pri:10, instance:com.qa.spinent.testpages.HomePageTest@192b07fd]" name="languageButtonTest" duration-ms="1012" started-at="2021-05-09T12:18:29 CEST" description="The button function will be tested to see if it is clickable or not!" finished-at="2021-05-09T12:18:30 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- languageButtonTest -->
-        <test-method status="PASS" signature="userAccountNamesButtonTest()[pri:11, instance:com.qa.spinent.testpages.HomePageTest@192b07fd]" name="userAccountNamesButtonTest" duration-ms="979" started-at="2021-05-05T02:30:46 CEST" description="The button function will be tested to see if it is clickable or not!" finished-at="2021-05-05T02:30:47 CEST">
+        <test-method status="PASS" signature="userAccountNamesButtonTest()[pri:11, instance:com.qa.spinent.testpages.HomePageTest@192b07fd]" name="userAccountNamesButtonTest" duration-ms="979" started-at="2021-05-09T12:18:30 CEST" description="The button function will be tested to see if it is clickable or not!" finished-at="2021-05-09T12:18:31 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userAccountNamesButtonTest -->
-        <test-method status="PASS" signature="printCertificateButtonTest()[pri:12, instance:com.qa.spinent.testpages.HomePageTest@192b07fd]" name="printCertificateButtonTest" duration-ms="991" started-at="2021-05-05T02:30:47 CEST" description="The button function will be tested to see if it is clickable or not!" finished-at="2021-05-05T02:30:48 CEST">
+        <test-method status="PASS" signature="printCertificateButtonTest()[pri:12, instance:com.qa.spinent.testpages.HomePageTest@192b07fd]" name="printCertificateButtonTest" duration-ms="1010" started-at="2021-05-09T12:18:31 CEST" description="The button function will be tested to see if it is clickable or not!" finished-at="2021-05-09T12:18:32 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- printCertificateButtonTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.spinent.testpages.HomePageTest@192b07fd]" name="tearDown" is-config="true" duration-ms="749" started-at="2021-05-05T02:32:05 CEST" finished-at="2021-05-05T02:32:05 CEST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.spinent.testpages.HomePageTest@192b07fd]" name="tearDown" is-config="true" duration-ms="684" started-at="2021-05-09T12:19:24 CEST" finished-at="2021-05-09T12:19:25 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

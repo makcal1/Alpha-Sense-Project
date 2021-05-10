@@ -55,7 +55,7 @@ public Object[][] getLoginInvalidData(){
 		+ "Error message will be verified after sending wrong user information from the excel file.")	
 //@Description("create new contacts")
 //@Severity(SeverityLevel.BLOCKER)	
-public void userSecurity(String mailData, String passwordData) {
+public void userSecurity(String mailData, String passwordData) throws InterruptedException {
 	
 loginPage.createNewContact(mailData, passwordData);
 

@@ -24,7 +24,8 @@ BasePage basePage;
 Properties prop;
 LoginPage loginPage;
 Credentials userCred;
-
+public static String USERNAME="muhammedakcal_x0ifUn";
+public static String ACCESSKEY="UDdA7F2vez7ACjfBDNhW";
 
 @BeforeTest(alwaysRun = true)
 
@@ -33,6 +34,11 @@ public void setUp() {
 	prop = basePage.init_properties();
 	String browserName = prop.getProperty("browser");
 	driver = basePage.init_driver(browserName);
+	
+	
+	
+	
+	
 	driver.get(prop.getProperty("url"));
 	loginPage = new LoginPage(driver);
 	userCred = new Credentials(prop.getProperty("username"), prop.getProperty("password"));

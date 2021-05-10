@@ -67,12 +67,12 @@ elementUtil.doClick(lctr.greenLoginBtn);
 return new HomePage(driver);
 
 }
-public void createNewContact(String mailData, String passwordData) {
+public void createNewContact(String mailData, String passwordData) throws InterruptedException {
 	
 	elementUtil.waitForElementPresent(lctr.email);
 
 	elementUtil.doSendKeys(lctr.email, mailData);
-	
+	Thread.sleep(5000);
 	elementUtil.doSendKeys(lctr.password, passwordData);
 	
     elementUtil.doClick(lctr.greenLoginBtn);
