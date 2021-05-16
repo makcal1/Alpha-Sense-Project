@@ -3,13 +3,50 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.spinent.testpages.ParallelTest">
+      <class name="com.qa.spinent.testpages.HomePageTest">
         <methods>
+          <include name="verifyHomePageTitle"/>
+          <include name="givePresentationButtonTest"/>
+          <include name="languageButtonTest"/>
+          <include name="knowYourselfButtonTest"/>
+          <include name="determineProblemsButtonTest"/>
+          <include name="printCertificateButtonTest"/>
+          <include name="generateIdeasButtonTest"/>
+          <include name="userAccountNamesButtonTest"/>
+          <include name="askToCustomerButtonTest"/>
+          <include name="preapareMVPButtonTest"/>
+          <include name="belowButtonAblemsTest"/>
+          <include name="tearDown"/>
+          <include name="introToSportsTechButtonTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.spinent.testpages.HomePageTest -->
+      <class name="com.qa.spinent.testpages.AccountLogoutPageTest">
+        <methods>
+          <include name="logOutFunctionTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="logOutUrlVerificationTest"/>
+        </methods>
+      </class> <!-- com.qa.spinent.testpages.AccountLogoutPageTest -->
+      <class name="com.qa.spinent.testpages.MyReportPageTest">
+        <methods>
+          <include name="verifyMyReportPageTable"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="userSecurity" invocation-numbers="0 1 2 3 4 5 6 7"/>
+          <include name="verifyMyReportPageTableVisibility"/>
         </methods>
-      </class> <!-- com.qa.spinent.testpages.ParallelTest -->
+      </class> <!-- com.qa.spinent.testpages.MyReportPageTest -->
+      <class name="com.qa.spinent.testpages.LoginPageTest">
+        <methods>
+          <include name="verifyLoginPageUrlTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyGreenolorLoginButtonTest"/>
+          <include name="verifyLoginPageTitleTest"/>
+          <include name="verifyRedColorLoginButtonTest"/>
+        </methods>
+      </class> <!-- com.qa.spinent.testpages.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
