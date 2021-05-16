@@ -27,11 +27,8 @@
 
 <test name="Spinent Functional Regression Test">
     <classes>
-      <class name="com.qa.spinent.testpages.HomePageTest"/>
       <class name="com.qa.spinent.testpages.AccountLogoutPageTest"/>
-      <class name="com.qa.spinent.testpages.LoginPageUserSecurityTest"/>
       <class name="com.qa.spinent.testpages.LoginPageTest"/>
-      <class name="com.qa.spinent.testpages.MyReportPageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

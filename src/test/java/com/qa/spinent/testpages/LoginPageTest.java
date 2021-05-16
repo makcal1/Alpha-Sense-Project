@@ -67,6 +67,7 @@ public void verifyLoginPageUrlTest() {
 //@Severity(SeverityLevel.CRITICAL)
 public void verifyRedColorLoginButtonTest() {
 	Assert.assertTrue(loginPage.checkRedLoginPageButton());
+	System.out.println("Passsed");
 }
 
 @Test(priority = 4, description = "VERIFICATION OF GREEN LOGIN-BUTTON IN THE LOGIN PAGE ", enabled = true)
