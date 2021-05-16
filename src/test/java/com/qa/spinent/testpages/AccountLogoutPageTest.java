@@ -46,7 +46,7 @@ public class AccountLogoutPageTest {
 	}@Test(priority = 2)
 	public void logOutUrlVerificationTest() {
 		String expectedUrl= accountLogoutPage.logOutVerificationWithUrl();
-		Assert.assertEquals("Failed", AppConstants.ACCOUNT_PAGE_URL);
+		Assert.assertEquals(expectedUrl, AppConstants.ACCOUNT_PAGE_URL);
 
 	}
 	@AfterTest()
