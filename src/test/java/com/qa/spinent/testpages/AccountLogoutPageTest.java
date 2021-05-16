@@ -24,7 +24,7 @@ public class AccountLogoutPageTest {
 	HomePage homePage;
 	AccountLogoutPage accountLogoutPage;
 	Credentials userCred;
-	
+
 
 	@BeforeTest()
 	public void setUp() {
@@ -37,17 +37,17 @@ public class AccountLogoutPageTest {
 		userCred = new Credentials(prop.getProperty("username"), prop.getProperty("password"));
 		homePage = loginPage.doLogin(userCred);
 		accountLogoutPage = new AccountLogoutPage(driver);
-	
-	
+
+
 	}@Test(priority = 1)
 	public void logOutFunctionTest() {
-	Assert.assertTrue(accountLogoutPage.logOutFunctionMethod());	
-		
+		Assert.assertTrue(accountLogoutPage.logOutFunctionMethod());	
+
 	}@Test(priority = 2)
 	public void logOutUrlVerificationTest() {
-	String expectedUrl= accountLogoutPage.logOutVerificationWithUrl();
-	Assert.assertEquals(expectedUrl, AppConstants.ACCOUNT_PAGE_URL);
-		
+		String expectedUrl= accountLogoutPage.logOutVerificationWithUrl();
+		Assert.assertEquals(expectedUrl, AppConstants.ACCOUNT_PAGE_URL);
+
 	}
 	@AfterTest()
 	public void tearDown() {
