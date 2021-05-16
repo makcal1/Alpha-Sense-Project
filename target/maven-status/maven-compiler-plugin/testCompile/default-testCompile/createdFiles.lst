@@ -1,5 +1,2 @@
-com\qa\spinent\testpages\LoginPageUserSecurityTest.class
 com\qa\spinent\testpages\AccountLogoutPageTest.class
 com\qa\spinent\testpages\LoginPageTest.class
-com\qa\spinent\testpages\MyReportPageTest.class
-com\qa\spinent\testpages\HomePageTest.class
