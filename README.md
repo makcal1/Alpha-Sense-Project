@@ -4,7 +4,7 @@ The project was created on January 15, 2022.
 
 1-) Front-end and API testing are supported by the project, which has been implemented in a maven project.
 
-2-) The text can be executed in three different ways;
+2-) The text can be executed in different ways;
 
 3-) Test classes allow you to run tests by selecting Run All or Run Annotations.
 
