@@ -1,52 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.spinent.testpages.HomePageTest">
+      <class name="com.qa.alphasense.testpages.AlphaSenseFrontendPageTest">
         <methods>
-          <include name="verifyHomePageTitle"/>
-          <include name="givePresentationButtonTest"/>
-          <include name="languageButtonTest"/>
-          <include name="knowYourselfButtonTest"/>
-          <include name="determineProblemsButtonTest"/>
-          <include name="printCertificateButtonTest"/>
-          <include name="generateIdeasButtonTest"/>
-          <include name="userAccountNamesButtonTest"/>
-          <include name="askToCustomerButtonTest"/>
-          <include name="preapareMVPButtonTest"/>
-          <include name="belowButtonAblemsTest"/>
           <include name="tearDown"/>
-          <include name="introToSportsTechButtonTest"/>
-          <include name="setUp"/>
+          <include name="openEnvironment"/>
+          <include name="verifyChosenStatement"/>
         </methods>
-      </class> <!-- com.qa.spinent.testpages.HomePageTest -->
-      <class name="com.qa.spinent.testpages.AccountLogoutPageTest">
-        <methods>
-          <include name="logOutFunctionTest"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="logOutUrlVerificationTest"/>
-        </methods>
-      </class> <!-- com.qa.spinent.testpages.AccountLogoutPageTest -->
-      <class name="com.qa.spinent.testpages.MyReportPageTest">
-        <methods>
-          <include name="verifyMyReportPageTable"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="verifyMyReportPageTableVisibility"/>
-        </methods>
-      </class> <!-- com.qa.spinent.testpages.MyReportPageTest -->
-      <class name="com.qa.spinent.testpages.LoginPageTest">
-        <methods>
-          <include name="verifyLoginPageUrlTest"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="verifyGreenolorLoginButtonTest"/>
-          <include name="verifyLoginPageTitleTest"/>
-          <include name="verifyRedColorLoginButtonTest"/>
-        </methods>
-      </class> <!-- com.qa.spinent.testpages.LoginPageTest -->
+      </class> <!-- com.qa.alphasense.testpages.AlphaSenseFrontendPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

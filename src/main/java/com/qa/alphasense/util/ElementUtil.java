@@ -1,4 +1,4 @@
-package com.qa.spinent.util;
+package com.qa.alphasense.util;
 
 import java.time.Duration;
 import java.util.Properties;
@@ -8,186 +8,215 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import com.qa.alphasense.base.BasePage;
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 
-import com.qa.spinent.base.BasePage;
 
+public class ElementUtil extends BasePage
+{
 
+	/**
+	 * @author <Muhammed Akcal> - 07/02/2022
+	 */
 
-public class ElementUtil extends BasePage{
-	
 	WebDriver driver;
 	WebDriverWait wait;
 	JavaScriptUtil jsUtil;
 	Properties prop;
-	
-	
-	public ElementUtil(WebDriver driver) {
+	Robot robot;
+
+	public ElementUtil(WebDriver driver) 
+	{
 		this.driver  = driver;
 		wait = new WebDriverWait(driver, AppConstants.DEFAULT_TIMEOUT);
 		jsUtil = new JavaScriptUtil(driver);
-		
-	}/**
-	 * presenceOfElementLocated
-	 * @param locator
-	 * @return
-	 */
-	public boolean waitForElementToBeClickable(By locator) {
+
+	}
+
+	public boolean waitForElementToBeClickable(By locator) 
+	{
 		wait.until(ExpectedConditions.elementToBeClickable(locator));
 		wait.withTimeout(Duration.ofSeconds(7));
 		return true;
 	}
-	
-	/**
-	 * Wait for title
-	 * @param title
-	 * @return
-	 */
-	public boolean waitForTitlePresent(String title) {
+
+	public boolean waitForTitlePresent(String title) 
+	{
 		wait.until(ExpectedConditions.titleIs(title));
 		return true;
 	}
-	
-	/**
-	 * presenceOfElementLocated
-	 * @param locator
-	 * @return
-	 */
-	public boolean waitForElementPresent(By locator) {
+
+
+	public boolean waitForElementPresent(By locator) 
+	{
 		wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 		return true;
 	}
-	
-	/**
-	 * visibilityOfElementLocated
-	 * @param locator
-	 * @return
-	 */
-	public boolean waitForElementVisible(By locator) {
+
+	public boolean waitForElementVisible(By locator) 
+	{
 		wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 		return true;
 	}
-	
-	/**
-	 * @author bobit
-	 * Gettitle method
-	 * @return
-	 */
-	public String doGetPageTitle() {
-		
-		try {
+
+	public String doGetPageTitle() 
+	{
+
+		try 
+		{
 			return driver.getTitle();
 		}
-		catch (Exception e) {
+		catch (Exception e) 
+		{
 			System.out.println("some excaption got occured while getting the title...");
 		}
 		return null;
 	}
-	
-	/**
-	 * Get element
-	 * @param locator
-	 * @return
-	 */
-	public WebElement getElement(By locator) {
+
+
+	public WebElement getElement(By locator) 
+	{
 		WebElement element = null;
-		try {
-			//if(waitForElementPresent(locator));
+		try 
+		{
 			element = driver.findElement(locator);
-			if(highlightElement) {
+			if(highlightElement) 
+			{
 				jsUtil.flash(element);
 			}
-		} catch (Exception e) {
+		} catch (Exception e) 
+		{
 			System.out.println("some exception occured while creating the web element...");
 		}
 		return element;
 	}
-	
-	/**
-	 * Click on method
-	 * @param locator
-	 */
-	public void doClick(By locator) {
+
+
+	public void click(By locator) 
+	{
 		try {
-		getElement(locator).click();
-		
+
+			getElement(locator).click();
+
 		}
-		catch (Exception e) {
+		catch (Exception e) 
+		{
 			System.out.println("some exception occured while clicking the web element...");
 		}
 	}
-	
-	/**
-	 * SendKeys Method
-	 * @param locator
-	 * @param value
-	 */
-	public void doSendKeys(By locator, String value) {
-		
-		try {
+
+
+	public void sendKeys(By locator, String value) 
+	{
+
+		try 
+		{
 			WebElement element = getElement(locator);
 			element.clear();
 			element.sendKeys(value);
-		} catch (Exception e) {
+		} catch (Exception e) 
+		{
 			System.out.println("some exception occured while entering values in a field.");
 		}
 	}
-	
-	/**
-	 * isDisplayed
-	 * @param locator
-	 * @return
-	 */
-	public boolean doIsDisplayed(By locator) {
-		
-		try {
+
+
+	public boolean doIsDisplayed(By locator) 
+	{
+
+		try 
+		{
 			return getElement(locator).isDisplayed();
 		}
-		catch (Exception e) {
+		catch (Exception e) 
+		{
 			System.out.println("some exception occured while isDisplayed");
 		}
 		return false;
 	}
-	
-	/**
-	 * isEnabled
-	 * @param locator
-	 * @return
-	 */
-    public boolean doIsEnabled(By locator) {
-		
-		try {
+
+
+	public boolean doIsEnabled(By locator) 
+	{
+
+		try 
+		{
 			return getElement(locator).isEnabled();
 		}
-		catch (Exception e) {
+		catch (Exception e) 
+		{
 			System.out.println("some exception occured while isEnabled");
 		}
+
 		return false;
 	}
-    
-    /**
-     * isSelected
-     * @param locator
-     * @return
-     */
-    public boolean doIsSelected(By locator) {
-		
-		try {
+
+
+	public boolean doIsSelected(By locator) 
+	{
+
+		try 
+		{
 			return getElement(locator).isSelected();
 		}
-		catch (Exception e) {
+		catch (Exception e) 
+		{
 			System.out.println("some exception occured while isSelected");
 		}
+
 		return false;
 	}
-    
-    public String doGetText(By locator) {
-    	try {
-    		return getElement(locator).getText();
-    	}
-    	catch (Exception e) {
-    		System.out.println("some exception occured while getting text");
+
+	public String getText(By locator) 
+	{
+		try 
+		{
+			return getElement(locator).getText();
+		}
+		catch (Exception e) 
+		{
+			System.out.println("some exception occured while getting text");
 		}
 		return null;
-    }
-	
+	}
+
+	public void pressEnter(int time) throws Exception 
+	{
+
+		try 
+		{
+			robot = new Robot();
+			for (int i = 0; i < time; i++) 
+			{
+				robot.keyPress(KeyEvent.VK_ENTER); 
+				robot.keyRelease(KeyEvent.VK_ENTER);
+				robot.delay(1000);
+
+			}}
+		catch (Exception e) 
+		{
+			e.printStackTrace();
+		}
+	}
+
+	public void pressTab(int time) throws Exception 
+	{
+		try 
+		{
+			robot = new Robot();
+			for (int i = 0; i < time; i++) 
+			{
+				robot.keyPress(KeyEvent.VK_TAB); 
+				Thread.sleep(1000);
+
+			}}
+		catch (Exception e) 
+		{
+			e.printStackTrace();
+
+		}}
 }
+
+

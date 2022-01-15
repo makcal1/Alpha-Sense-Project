@@ -1,93 +1,171 @@
-package com.qa.spinent.pages;
+package com.qa.alphasense.pages;
+
+
+import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
-import com.qa.spinent.base.BasePage;
-import com.qa.spinent.util.AppConstants;
-import com.qa.spinent.util.Credentials;
-import com.qa.spinent.util.ElementUtil;
+import com.qa.alphasense.base.BasePage;
+import com.qa.alphasense.util.ElementUtil;
 
 
 
-public class LoginPage extends BasePage{
+
+
+
+
+public class HomePage extends BasePage{
+
+/**
+ * @author <Muhammed Akcal> - 07/02/2022
+ */
+
+
+
+	WebDriver driver;
+	ElementUtil elementUtil;
+	LocatorsPage locator;
+	Actions action;
 	
-WebDriver driver;
-ElementUtil elementUtil;
-LocatorsPage lctr;
 
-//Constructor
-	public LoginPage(WebDriver driver) {
+
+	//Constructory
+	public HomePage(WebDriver driver)
+
+	{
 		this.driver = driver;
 		elementUtil = new ElementUtil(driver);
-		lctr = new LocatorsPage();
+		locator = new LocatorsPage();
+		action = new Actions(driver);
+
 	}
-/**
- * 1.METHOD --> TITLE
- * @return
- */
-	
-public String getPageTitle() {
-elementUtil.waitForTitlePresent(AppConstants.LOGIN_PAGE_TITLE);
-return elementUtil.doGetPageTitle();
-/**
- * 2.METHOD --> URL 
- * @return
- */
-}public String getPageUrl() {
-elementUtil.waitForTitlePresent(AppConstants.LOGIN_PAGE_TITLE);	
-return driver.getCurrentUrl();
-/**
- * 3.METHOD --> RED COLOR LOGIN BUTTON FUNCTIONALITY
- * @return
- */
-}public boolean checkRedLoginPageButton() {
-elementUtil.waitForElementPresent(lctr.redlLoginBtn);
-return elementUtil.doIsDisplayed(lctr.redlLoginBtn);
-/**
- * 4.METHOD --> GREEN COLOR LOGIN BUTTON FUNCTIONALITY
- * @return
- */
-}public boolean checkGreenLoginPageButton() {
-	elementUtil.waitForElementPresent(lctr.greenLoginBtn);
-	return elementUtil.doIsDisplayed(lctr.greenLoginBtn);
-	
-/**
- * 
- * 5.METHOD -->LOGIN METHOD
- */
-	
-}public HomePage doLogin(Credentials userCred) {
-	
-elementUtil.doSendKeys(lctr.email, userCred.getAppUsername());
-elementUtil.doSendKeys(lctr.password, userCred.getAppPassword());
 
-elementUtil.doClick(lctr.greenLoginBtn);
+	public void searchAdditionalKeyword(String keyword) throws Exception
+
+	{
+
+		try 
+
+		{
+
+			By searchKeyword = locator.searchKeywordLocation;
+
+			elementUtil.waitForElementVisible(searchKeyword);
+			elementUtil.click(searchKeyword);
+
+			action.sendKeys(driver.findElement(searchKeyword), keyword).build().perform();
+			action.sendKeys(driver.findElement(searchKeyword), Keys.ENTER).build().perform();
+
+		} 
+
+		catch (Exception e) 
+
+		{
+
+			e.printStackTrace();
+		}
+
+	}
+
+	public void scrollTheLastFoundResult() 
+
+	{
+
+		By lastFoundResult = locator.lastelementAfterSearcingKeywordLocation;
+
+		try 
 	
-return new HomePage(driver);
+		{
+
+			elementUtil.waitForElementVisible(lastFoundResult);
+			action.sendKeys(driver.findElement(lastFoundResult), Keys.CONTROL).pause(Duration.ofSeconds(1)).build().perform();
+			action.sendKeys(driver.findElement(lastFoundResult), Keys.END).pause(Duration.ofSeconds(1)).build().perform();
+			action.sendKeys(driver.findElement(lastFoundResult), Keys.CONTROL).pause(Duration.ofSeconds(1)).build().perform();
+			action.sendKeys(driver.findElement(lastFoundResult), Keys.END).pause(Duration.ofSeconds(1)).build().perform();
+
+		} 
+		
+		catch (Exception e) 
+		
+		{
+			e.printStackTrace();
+
+		}
+	}
+
+	public void clickTheLastFoundResult() 
+
+	{
+
+		By lastFoundResult = locator.lastelementAfterSearcingKeywordLocation;
+		int attempts = 0;
+		while(attempts < 2) 
+		
+		{
+			
+			try 
+			{
+				action.click(driver.findElement(lastFoundResult)).pause(Duration.ofSeconds(1)).build().perform();
+				break;
+
+			} 
+			
+			catch(Exception e) 
+			{
+				e.printStackTrace();
+			}
+			
+			attempts++;
+		}
+	}
+
+	public void switchFrameTo(String frameName) 
+	{
+
+		try 
+		{
+			driver.switchTo().frame(frameName);
+		} 
+		catch (Exception e) 
+		{
+			e.printStackTrace();
+		}
+
+	}
+	
+	public String getTextFromChosenStatement() 
+	{
+
+		By textLocation = locator.chosenStatement;
+		WebElement textElement =driver.findElement(textLocation);
+		String text = textElement.getText();
+
+		try 
+		{
+			elementUtil.waitForElementPresent(textLocation);
+			System.out.println("Chosen Statement : "+ textElement.getText());
+		} catch (Exception e) 
+		{
+			e.printStackTrace();
+		}
+
+		finally 
+		{
+			return 	text;
+		}
+
+
+	}
+
+  
+
+
 
 }
-public void createNewContact(String mailData, String passwordData) throws InterruptedException {
-	
-	elementUtil.waitForElementPresent(lctr.email);
-
-	elementUtil.doSendKeys(lctr.email, mailData);
-	Thread.sleep(5000);
-	elementUtil.doSendKeys(lctr.password, passwordData);
-	
-    elementUtil.doClick(lctr.greenLoginBtn);
-    
-    
-	System.out.println(elementUtil.doGetText(lctr.email));
-	
-	
-}public boolean gettingErrorMessage() {
-
-	return elementUtil.doIsDisplayed(lctr.errorMessage);
-	
-}public String errorText() {
-	return elementUtil.doGetText(lctr.errorMessage);
-}
 
 
-}
+

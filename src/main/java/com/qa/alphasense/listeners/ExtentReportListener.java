@@ -1,82 +1,125 @@
-package com.qa.spinent.listeners;
-/*
- * package com.spinent.listeners;
- * 
- * import java.io.File; import java.util.ArrayList; import java.util.HashMap;
- * import java.util.List; import java.util.Map;
- * 
- * import org.openqa.selenium.OutputType; import
- * org.openqa.selenium.TakesScreenshot; import org.openqa.selenium.WebDriver;
- * import org.testng.ITestContext; import org.testng.ITestListener; import
- * org.testng.ITestResult;
- * 
- * import com.spinent.base.BasePage; import com.tesults.tesults.Results;
- * 
- * public class TestultsListener extends BasePage implements ITestListener {
- * 
- * List<Map<String, Object>> testCases = new ArrayList<Map<String, Object>>();
- * 
- * public static String getTestMethodName(ITestResult iTestResult) { return
- * iTestResult.getMethod().getConstructorOrMethod().getName(); }
- * 
- * public static Object[] getTestParams(ITestResult iTestResult) { return
- * iTestResult.getParameters(); }
- * 
- * public byte[] saveScreenshotPNG(WebDriver driver) { return ((TakesScreenshot)
- * driver).getScreenshotAs(OutputType.BYTES); }
- * 
- * @Override public void onTestStart(ITestResult result) {
- * System.out.println("I am in onTestStart method " + getTestMethodName(result)
- * + " start");
- * 
- * }
- * 
- * @Override public void onTestSuccess(ITestResult iTestResult) { Map<String,
- * Object> testCase = new HashMap<String, Object>(); testCase.put("name",
- * getTestMethodName(iTestResult)); testCase.put("suite", "TesultsExample");
- * testCase.put("result", "pass"); testCase.put("params",
- * getTestParams(iTestResult)); testCases.add(testCase); }
- * 
- * @Override public void onTestFailure(ITestResult iTestResult) { Map<String,
- * Object> testCase = new HashMap<String, Object>(); testCase.put("name",
- * getTestMethodName(iTestResult)); testCase.put("suite", "TesultsExample");
- * testCase.put("result", "fail"); testCase.put("params",
- * getTestParams(iTestResult)); List<String> files = new ArrayList<String>();
- * //files.add(getScreenshot()); testCase.put("files", files);
- * 
- * testCases.add(testCase); }
- * 
- * @Override public void onTestSkipped(ITestResult iTestResult) { Map<String,
- * Object> testCase = new HashMap<String, Object>(); testCase.put("name",
- * getTestMethodName(iTestResult)); testCase.put("suite", "TesultsExample");
- * testCase.put("result", "fail"); testCase.put("params",
- * getTestParams(iTestResult)); List<String> files = new ArrayList<String>();
- * //files.add(getScreenshot()); testCase.put("files", files);
- * 
- * testCases.add(testCase); }
- * 
- * @Override public void onTestFailedButWithinSuccessPercentage(ITestResult
- * result) { // TODO Auto-generated method stub
- * 
- * }
- * 
- * @Override public void onStart(ITestContext context) { }
- * 
- * @Override public void onFinish(ITestContext iTestContext) { // Map<String,
- * Object> to hold your test results data. Map<String, Object> data = new
- * HashMap<String, Object>(); data.put("target",
- * "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6ImRmZGU2ZWRiLTRlZjctNDkwNy04NWEzLTNjZTU1MDdhMmU5Ni0xNTg4NDEyNDkxNTI2IiwiZXhwIjo0MTAyNDQ0ODAwMDAwLCJ2ZXIiOiIwIiwic2VzIjoiMjdmZTEwNGItNzExNS00ODRhLWFiOTQtNjYwNmY5MDYyOGI3IiwidHlwZSI6InQifQ.5HHqpsX9HCBMzKCFP8zgHlEjgMrfJLw1wKWGrM6Ps2s"
- * );
- * 
- * Map<String, Object> results = new HashMap<String, Object>();
- * results.put("cases", testCases); data.put("results", results);
- * 
- * // Upload Map<String, Object> response = Results.upload(data);
- * System.out.println("success: " + response.get("success"));
- * System.out.println("message: " + response.get("message"));
- * System.out.println("warnings: " + ((List<String>)
- * response.get("warnings")).size()); System.out.println("errors: " +
- * ((List<String>) response.get("errors")).size()); }
- * 
- * }
- */
+package com.qa.alphasense.listeners;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Arrays;
+import java.util.Calendar;
+import java.util.Date;
+
+import org.testng.ITestContext;
+import org.testng.ITestListener;
+import org.testng.ITestResult;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.configuration.ChartLocation;
+import com.aventstack.extentreports.reporter.configuration.Theme;
+import com.qa.alphasense.base.BasePage;
+
+
+public class ExtentReportListener extends BasePage implements ITestListener {
+
+	private static final String OUTPUT_FOLDER = "./build/";
+	private static final String FILE_NAME = "TestExecutionReport.html";
+
+	private static ExtentReports extent = init();
+	public static ThreadLocal<ExtentTest> test = new ThreadLocal<ExtentTest>();
+
+	private static ExtentReports init() {
+
+		Path path = Paths.get(OUTPUT_FOLDER);
+		
+		if (!Files.exists(path)) {
+			try {
+				Files.createDirectories(path);
+			} catch (IOException e) {
+				// fail to create directory
+				e.printStackTrace();
+			}
+		}
+		ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(OUTPUT_FOLDER + FILE_NAME);
+		htmlReporter.config().setDocumentTitle("Automation Test Results");
+		htmlReporter.config().setReportName("Automation Test Results");
+		htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
+		htmlReporter.config().setTheme(Theme.STANDARD);
+
+		extent = new ExtentReports();
+		extent.attachReporter(htmlReporter);
+		extent.setReportUsesManualConfiguration(true);
+
+		return extent;
+	}
+
+	public synchronized void onStart(ITestContext context) {
+		System.out.println("Test Suite started!");
+	}
+
+	public synchronized void onFinish(ITestContext context) {
+		System.out.println(("Test Suite is ending!"));
+		extent.flush();
+		test.remove();
+	}
+
+	public synchronized void onTestStart(ITestResult result) {
+		String methodName = result.getMethod().getMethodName();
+		String qualifiedName = result.getMethod().getQualifiedName();
+		int last = qualifiedName.lastIndexOf(".");
+		int mid = qualifiedName.substring(0, last).lastIndexOf(".");
+		String className = qualifiedName.substring(mid + 1, last);
+
+		System.out.println(methodName + " started!");
+		ExtentTest extentTest = extent.createTest(result.getMethod().getMethodName(),
+				result.getMethod().getDescription());
+
+		extentTest.assignCategory(result.getTestContext().getSuite().getName());
+
+		extentTest.assignCategory(className);
+		test.set(extentTest);
+		test.get().getModel().setStartTime(getTime(result.getStartMillis()));
+	}
+
+	public void onTestSuccess(ITestResult result) {
+		System.out.println((result.getMethod().getMethodName() + " passed!"));
+		test.get().pass("Test passed");
+		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
+	}
+
+	public void onTestFailure(ITestResult result) {
+		System.out.println((result.getMethod().getMethodName() + " failed!"));
+		try {
+			test.get().fail(result.getThrowable(),
+					MediaEntityBuilder.createScreenCaptureFromPath(getScreenshot()).build());
+		} catch (IOException e) {
+			System.err
+			.println("Exception thrown while updating test fail status " + Arrays.toString(e.getStackTrace()));
+		}
+		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
+	}
+
+	public  void onTestSkipped(ITestResult result) {
+		System.out.println((result.getMethod().getMethodName() + " skipped!"));
+		try {
+			test.get().skip(result.getThrowable(),
+					MediaEntityBuilder.createScreenCaptureFromPath(getScreenshot()).build());
+		} catch (IOException e) {
+			System.err
+			.println("Exception thrown while updating test skip status " + Arrays.toString(e.getStackTrace()));
+		}
+		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
+	}
+
+	public  void onTestFailedButWithinSuccessPercentage(ITestResult result) {
+		System.out.println(("onTestFailedButWithinSuccessPercentage for " + result.getMethod().getMethodName()));
+	}
+
+	private Date getTime(long millis) {
+		Calendar calendar = Calendar.getInstance();
+		calendar.setTimeInMillis(millis);
+		return calendar.getTime();
+	}
+
+}

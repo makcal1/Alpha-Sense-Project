@@ -24,23 +24,23 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
-      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
-          <img src="collapseall.gif" class="collapse-all-icon">
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-Alpha_Sense_Test">
+              <span class="suite-name border-failed">Alpha Sense Test</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\muham\AppData\Local\Temp\testng-eclipse--1891333800\testng-customsuite.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Alpha_Sense_Test">
+                    <span>C:\Users\muham\eclipse-workspace\ASenseProject\resources\testrunners\testng.alphaSense.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="testlist-Alpha_Sense_Test">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="group-Alpha_Sense_Test">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="times-Alpha_Sense_Test">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="reporter-Alpha_Sense_Test">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Alpha_Sense_Test">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="chronological-Alpha_Sense_Test">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,46 +93,65 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Alpha_Sense_Test" class="hide-methods failed suite-Alpha_Sense_Test"> (hide)</a> <!-- hide-methods failed suite-Alpha_Sense_Test -->
+                      <a href="#" panel-name="suite-Alpha_Sense_Test" class="show-methods failed suite-Alpha_Sense_Test"> (show)</a> <!-- show-methods failed suite-Alpha_Sense_Test -->
+                    </span>
+                    <div class="method-list-content failed suite-Alpha_Sense_Test">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Alpha_Sense_Test" title="com.qa.alphasense.testpages.Test_02_AlphaSenseAPITests" hash-for-method="postingJsonData">postingJsonData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Alpha_Sense_Test -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Alpha_Sense_Test" class="hide-methods passed suite-Alpha_Sense_Test"> (hide)</a> <!-- hide-methods passed suite-Alpha_Sense_Test -->
+                      <a href="#" panel-name="suite-Alpha_Sense_Test" class="show-methods passed suite-Alpha_Sense_Test"> (show)</a> <!-- show-methods passed suite-Alpha_Sense_Test -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Alpha_Sense_Test">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.qa.spinent.testpages.AccountLogoutPageTest" class="method navigator-link" hash-for-method="logOutFunctionTest">logOutFunctionTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Alpha_Sense_Test" title="com.qa.alphasense.testpages.Test_02_AlphaSenseAPITests" hash-for-method="checkingStatus">checkingStatus</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.qa.spinent.testpages.AccountLogoutPageTest" class="method navigator-link" hash-for-method="logOutUrlVerificationTest">logOutUrlVerificationTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Alpha_Sense_Test" title="com.qa.alphasense.testpages.Test_01_AlphaSenseFrontendPageTest" hash-for-method="clickTheLastFoundResult">clickTheLastFoundResult</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.qa.spinent.testpages.LoginPageTest" class="method navigator-link" hash-for-method="verifyGreenolorLoginButtonTest">verifyGreenolorLoginButtonTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Alpha_Sense_Test" title="com.qa.alphasense.testpages.Test_01_AlphaSenseFrontendPageTest" hash-for-method="scrollTheLastFoundResult">scrollTheLastFoundResult</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.qa.spinent.testpages.LoginPageTest" class="method navigator-link" hash-for-method="verifyLoginPageTitleTest">verifyLoginPageTitleTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Alpha_Sense_Test" title="com.qa.alphasense.testpages.Test_01_AlphaSenseFrontendPageTest" hash-for-method="searchingforAdditionalKeyword">searchingforAdditionalKeyword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.qa.spinent.testpages.LoginPageTest" class="method navigator-link" hash-for-method="verifyLoginPageUrlTest">verifyLoginPageUrlTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Alpha_Sense_Test" title="com.qa.alphasense.testpages.Test_01_AlphaSenseFrontendPageTest" hash-for-method="switchToFrame">switchToFrame</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.qa.spinent.testpages.LoginPageTest" class="method navigator-link" hash-for-method="verifyRedColorLoginButtonTest">verifyRedColorLoginButtonTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Alpha_Sense_Test" title="com.qa.alphasense.testpages.Test_02_AlphaSenseAPITests" hash-for-method="verificationOfApplicationWebsite">verificationOfApplicationWebsite</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Alpha_Sense_Test" title="com.qa.alphasense.testpages.Test_01_AlphaSenseFrontendPageTest" hash-for-method="verifyChosenStatement">verifyChosenStatement</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Alpha_Sense_Test -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -143,249 +162,270 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Alpha_Sense_Test" class="panel Alpha_Sense_Test">
+          <div class="suite-Alpha_Sense_Test-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.qa.spinent.testpages.AccountLogoutPageTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.alphasense.testpages.Test_02_AlphaSenseAPITests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="logOutFunctionTest">
-                  </a> <!-- logOutFunctionTest -->
-                  <span class="method-name">logOutFunctionTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="logOutUrlVerificationTest">
-                  </a> <!-- logOutUrlVerificationTest -->
-                  <span class="method-name">logOutUrlVerificationTest</span>
+                  <a name="postingJsonData">
+                  </a> <!-- postingJsonData -->
+                  <span class="method-name">postingJsonData</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Cannot inject @Test annotated Method [postingJsonData] with [int].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Attempt of Posting Json File Without Authantication Code (Negative Test))                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-          <div class="suite-Default_suite-class-passed">
+          </div> <!-- suite-Alpha_Sense_Test-class-failed -->
+          <div class="suite-Alpha_Sense_Test-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.qa.spinent.testpages.LoginPageTest</span>
+              <span class="class-name">com.qa.alphasense.testpages.Test_02_AlphaSenseAPITests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyGreenolorLoginButtonTest">
-                  </a> <!-- verifyGreenolorLoginButtonTest -->
-                  <span class="method-name">verifyGreenolorLoginButtonTest</span>
+                  <a name="checkingStatus">
+                  </a> <!-- checkingStatus -->
+                  <span class="method-name">checkingStatus</span>
                   <em>
-(VERIFICATION OF GREEN LOGIN-BUTTON IN THE LOGIN PAGE )                  </em>
+(Page Status Code Test)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyLoginPageTitleTest">
-                  </a> <!-- verifyLoginPageTitleTest -->
-                  <span class="method-name">verifyLoginPageTitleTest</span>
+                  <a name="verificationOfApplicationWebsite">
+                  </a> <!-- verificationOfApplicationWebsite -->
+                  <span class="method-name">verificationOfApplicationWebsite</span>
                   <em>
-(LOGIN PAGE TITLE PRESENCE FUNCTIONALITY)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLoginPageUrlTest">
-                  </a> <!-- verifyLoginPageUrlTest -->
-                  <span class="method-name">verifyLoginPageUrlTest</span>
-                  <em>
-(LOGIN PAGE URL FUNCTIONALITY TEST)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyRedColorLoginButtonTest">
-                  </a> <!-- verifyRedColorLoginButtonTest -->
-                  <span class="method-name">verifyRedColorLoginButtonTest</span>
-                  <em>
-(VERIFICATION OF RED LOGIN-BUTTON IN THE LOGIN PAGE )                  </em>
+(Application Website Name)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Alpha_Sense_Test-class-passed -->
+          <div class="suite-Alpha_Sense_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.alphasense.testpages.Test_01_AlphaSenseFrontendPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickTheLastFoundResult">
+                  </a> <!-- clickTheLastFoundResult -->
+                  <span class="method-name">clickTheLastFoundResult</span>
+                  <em>
+(Clicking On It)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="scrollTheLastFoundResult">
+                  </a> <!-- scrollTheLastFoundResult -->
+                  <span class="method-name">scrollTheLastFoundResult</span>
+                  <em>
+(Scrolling To The Last Found Result)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchingforAdditionalKeyword">
+                  </a> <!-- searchingforAdditionalKeyword -->
+                  <span class="method-name">searchingforAdditionalKeyword</span>
+                  <em>
+(Searching for Additional Keyword)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="switchToFrame">
+                  </a> <!-- switchToFrame -->
+                  <span class="method-name">switchToFrame</span>
+                  <em>
+(Changing Frame In Order To Verify Highlighed Result)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyChosenStatement">
+                  </a> <!-- verifyChosenStatement -->
+                  <span class="method-name">verifyChosenStatement</span>
+                  <em>
+(Verifying that chosen statement is highlighted in the document viewer)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Alpha_Sense_Test-class-passed -->
+        </div> <!-- panel Alpha_Sense_Test -->
+        <div panel-name="test-xml-Alpha_Sense_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\muham\AppData\Local\Temp\testng-eclipse--1891333800\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\muham\eclipse-workspace\ASenseProject\resources\testrunners\testng.alphaSense.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Alpha Sense Test&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.qa.alphasense.listeners.ExtentReportListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Alpha Sense Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.qa.spinent.util.AppConstants&quot;/&gt;
-      &lt;class name=&quot;com.qa.spinent.testpages.AccountLogoutPageTest&quot;/&gt;
-      &lt;class name=&quot;com.qa.spinent.pages.LoginPage&quot;/&gt;
-      &lt;class name=&quot;com.qa.spinent.testpages.LoginPageTest&quot;/&gt;
-      &lt;class name=&quot;com.qa.spinent.util.ElementUtil&quot;/&gt;
-      &lt;class name=&quot;com.qa.spinent.pages.LocatorsPage&quot;/&gt;
-      &lt;class name=&quot;com.qa.spinent.util.ExcelUtil&quot;/&gt;
-      &lt;class name=&quot;com.qa.spinent.pages.MyReportPage&quot;/&gt;
-      &lt;class name=&quot;com.qa.spinent.base.OptionsManager&quot;/&gt;
-      &lt;class name=&quot;com.qa.spinent.util.Credentials&quot;/&gt;
-      &lt;class name=&quot;com.qa.spinent.pages.HomePage&quot;/&gt;
-      &lt;class name=&quot;com.qa.spinent.util.JavaScriptUtil&quot;/&gt;
-      &lt;class name=&quot;com.qa.spinent.listeners.ScreenshotListener&quot;/&gt;
-      &lt;class name=&quot;com.qa.spinent.pages.AccountLogoutPage&quot;/&gt;
-      &lt;class name=&quot;com.qa.spinent.base.BasePage&quot;/&gt;
+      &lt;class name=&quot;com.qa.alphasense.testpages.Test_01_AlphaSenseFrontendPageTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.alphasense.testpages.Test_02_AlphaSenseAPITests&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Alpha Sense Test --&gt;
+&lt;/suite&gt; &lt;!-- Alpha Sense Test --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Alpha_Sense_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Alpha Sense Test</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (15 classes)</span>
+                <span class="test-name">Alpha Sense Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Alpha_Sense_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Alpha Sense Test</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Alpha_Sense_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Alpha Sense Test</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Alpha_Sense_Test');
+function tableData_Alpha_Sense_Test() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'logOutFunctionTest')
-data.setCell(0, 2, 'com.qa.spinent.testpages.AccountLogoutPageTest')
-data.setCell(0, 3, 786);
+data.setCell(0, 1, 'switchToFrame')
+data.setCell(0, 2, 'com.qa.alphasense.testpages.Test_01_AlphaSenseFrontendPageTest')
+data.setCell(0, 3, 20087);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyRedColorLoginButtonTest')
-data.setCell(1, 2, 'com.qa.spinent.testpages.LoginPageTest')
-data.setCell(1, 3, 715);
+data.setCell(1, 1, 'scrollTheLastFoundResult')
+data.setCell(1, 2, 'com.qa.alphasense.testpages.Test_01_AlphaSenseFrontendPageTest')
+data.setCell(1, 3, 5046);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyGreenolorLoginButtonTest')
-data.setCell(2, 2, 'com.qa.spinent.testpages.LoginPageTest')
-data.setCell(2, 3, 601);
+data.setCell(2, 1, 'checkingStatus')
+data.setCell(2, 2, 'com.qa.alphasense.testpages.Test_02_AlphaSenseAPITests')
+data.setCell(2, 3, 1733);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyLoginPageTitleTest')
-data.setCell(3, 2, 'com.qa.spinent.testpages.LoginPageTest')
-data.setCell(3, 3, 31);
+data.setCell(3, 1, 'searchingforAdditionalKeyword')
+data.setCell(3, 2, 'com.qa.alphasense.testpages.Test_01_AlphaSenseFrontendPageTest')
+data.setCell(3, 3, 1723);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyLoginPageUrlTest')
-data.setCell(4, 2, 'com.qa.spinent.testpages.LoginPageTest')
-data.setCell(4, 3, 17);
+data.setCell(4, 1, 'clickTheLastFoundResult')
+data.setCell(4, 2, 'com.qa.alphasense.testpages.Test_01_AlphaSenseFrontendPageTest')
+data.setCell(4, 3, 1159);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'logOutUrlVerificationTest')
-data.setCell(5, 2, 'com.qa.spinent.testpages.AccountLogoutPageTest')
-data.setCell(5, 3, 7);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(5, 1, 'verificationOfApplicationWebsite')
+data.setCell(5, 2, 'com.qa.alphasense.testpages.Test_02_AlphaSenseAPITests')
+data.setCell(5, 3, 275);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyChosenStatement')
+data.setCell(6, 2, 'com.qa.alphasense.testpages.Test_01_AlphaSenseFrontendPageTest')
+data.setCell(6, 3, 75);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'postingJsonData')
+data.setCell(7, 2, 'com.qa.alphasense.testpages.Test_02_AlphaSenseAPITests')
+data.setCell(7, 3, 0);
+window.suiteTableData['Alpha_Sense_Test']= { tableData: data, tableDiv: 'times-div-Alpha_Sense_Test'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 30 seconds</span>
+              <div id="times-div-Alpha_Sense_Test">
+              </div> <!-- times-div-Alpha_Sense_Test -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Alpha_Sense_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Alpha Sense Test</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Alpha_Sense_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Alpha_Sense_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.spinent.testpages.AccountLogoutPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.qa.alphasense.testpages.Test_01_AlphaSenseFrontendPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">setUp</span>
+                <span class="method-name">openEnvironment</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.spinent.testpages.LoginPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">6550 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.spinent.testpages.AccountLogoutPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">logOutFunctionTest</span>
-                <span class="method-start">9839 ms</span>
+                <span class="method-name">searchingforAdditionalKeyword</span>
+                <span class="method-start">8313 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">logOutUrlVerificationTest</span>
-                <span class="method-start">10631 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.spinent.testpages.LoginPageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifyLoginPageTitleTest</span>
-                <span class="method-start">10641 ms</span>
+                <span class="method-name">scrollTheLastFoundResult</span>
+                <span class="method-start">10056 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">verifyLoginPageUrlTest</span>
-                <span class="method-start">10674 ms</span>
+                <span class="method-name">clickTheLastFoundResult</span>
+                <span class="method-start">15105 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">verifyRedColorLoginButtonTest</span>
-                <span class="method-start">10693 ms</span>
+                <span class="method-name">switchToFrame</span>
+                <span class="method-start">16266 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">verifyGreenolorLoginButtonTest</span>
-                <span class="method-start">11410 ms</span>
+                <span class="method-name">verifyChosenStatement</span>
+                <span class="method-start">36355 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.spinent.testpages.AccountLogoutPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.qa.alphasense.testpages.Test_02_AlphaSenseAPITests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkingStatus</span>
+                <span class="method-start">36432 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verificationOfApplicationWebsite</span>
+                <span class="method-start">38173 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.alphasense.testpages.Test_01_AlphaSenseFrontendPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">12012 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.spinent.testpages.LoginPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">13171 ms</span>
+                <span class="method-start">39059 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

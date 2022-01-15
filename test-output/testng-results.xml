@@ -1,55 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results skipped="0" failed="1" ignored="0" total="8" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-16T12:47:27 CEST" name="Default suite" finished-at="2021-05-16T12:47:41 CEST" duration-ms="13905">
+  <suite name="Alpha Sense Test" duration-ms="39859" started-at="2022-01-15T13:59:07 CET" finished-at="2022-01-15T13:59:47 CET">
     <groups>
     </groups>
-    <test started-at="2021-05-16T12:47:27 CEST" name="Default test" finished-at="2021-05-16T12:47:41 CEST" duration-ms="13905">
-      <class name="com.qa.spinent.testpages.AccountLogoutPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.spinent.testpages.AccountLogoutPageTest@169e6180]" started-at="2021-05-16T12:47:27 CEST" name="setUp" finished-at="2021-05-16T12:47:34 CEST" duration-ms="6550" status="PASS">
+    <test name="Alpha Sense Test" duration-ms="39859" started-at="2022-01-15T13:59:07 CET" finished-at="2022-01-15T13:59:47 CET">
+      <class name="com.qa.alphasense.testpages.Test_01_AlphaSenseFrontendPageTest">
+        <test-method status="PASS" signature="openEnvironment()[pri:0, instance:com.qa.alphasense.testpages.Test_01_AlphaSenseFrontendPageTest@49070868]" name="openEnvironment" is-config="true" duration-ms="8280" started-at="2022-01-15T13:59:07 CET" description="Opening mentioned page" finished-at="2022-01-15T13:59:16 CET">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="logOutFunctionTest()[pri:1, instance:com.qa.spinent.testpages.AccountLogoutPageTest@169e6180]" started-at="2021-05-16T12:47:37 CEST" name="logOutFunctionTest" finished-at="2021-05-16T12:47:38 CEST" duration-ms="786" status="PASS">
+        </test-method> <!-- openEnvironment -->
+        <test-method status="PASS" signature="searchingforAdditionalKeyword()[pri:1, instance:com.qa.alphasense.testpages.Test_01_AlphaSenseFrontendPageTest@49070868]" name="searchingforAdditionalKeyword" duration-ms="1723" started-at="2022-01-15T13:59:16 CET" description="Searching for Additional Keyword" finished-at="2022-01-15T13:59:17 CET">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logOutFunctionTest -->
-        <test-method signature="logOutUrlVerificationTest()[pri:2, instance:com.qa.spinent.testpages.AccountLogoutPageTest@169e6180]" started-at="2021-05-16T12:47:38 CEST" name="logOutUrlVerificationTest" finished-at="2021-05-16T12:47:38 CEST" duration-ms="7" status="PASS">
+        </test-method> <!-- searchingforAdditionalKeyword -->
+        <test-method status="PASS" signature="scrollTheLastFoundResult()[pri:2, instance:com.qa.alphasense.testpages.Test_01_AlphaSenseFrontendPageTest@49070868]" name="scrollTheLastFoundResult" duration-ms="5046" started-at="2022-01-15T13:59:17 CET" description="Scrolling To The Last Found Result" finished-at="2022-01-15T13:59:22 CET">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logOutUrlVerificationTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.spinent.testpages.AccountLogoutPageTest@169e6180]" started-at="2021-05-16T12:47:39 CEST" name="tearDown" finished-at="2021-05-16T12:47:40 CEST" duration-ms="1159" status="PASS">
+        </test-method> <!-- scrollTheLastFoundResult -->
+        <test-method status="PASS" signature="clickTheLastFoundResult()[pri:3, instance:com.qa.alphasense.testpages.Test_01_AlphaSenseFrontendPageTest@49070868]" name="clickTheLastFoundResult" duration-ms="1159" started-at="2022-01-15T13:59:22 CET" description="Clicking On It" finished-at="2022-01-15T13:59:24 CET">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.spinent.testpages.AccountLogoutPageTest -->
-      <class name="com.qa.spinent.testpages.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.spinent.testpages.LoginPageTest@35aea049]" started-at="2021-05-16T12:47:34 CEST" name="setUp" finished-at="2021-05-16T12:47:37 CEST" duration-ms="3221" status="PASS">
+        </test-method> <!-- clickTheLastFoundResult -->
+        <test-method status="PASS" signature="switchToFrame()[pri:4, instance:com.qa.alphasense.testpages.Test_01_AlphaSenseFrontendPageTest@49070868]" name="switchToFrame" duration-ms="20087" started-at="2022-01-15T13:59:24 CET" description="Changing Frame In Order To Verify Highlighed Result" finished-at="2022-01-15T13:59:44 CET">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginPageTitleTest()[pri:1, instance:com.qa.spinent.testpages.LoginPageTest@35aea049]" started-at="2021-05-16T12:47:38 CEST" name="verifyLoginPageTitleTest" description="LOGIN PAGE TITLE PRESENCE FUNCTIONALITY" finished-at="2021-05-16T12:47:38 CEST" duration-ms="31" status="PASS">
+        </test-method> <!-- switchToFrame -->
+        <test-method status="PASS" signature="verifyChosenStatement()[pri:5, instance:com.qa.alphasense.testpages.Test_01_AlphaSenseFrontendPageTest@49070868]" name="verifyChosenStatement" duration-ms="75" started-at="2022-01-15T13:59:44 CET" description="Verifying that chosen statement is highlighted in the document viewer" finished-at="2022-01-15T13:59:44 CET">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginPageTitleTest -->
-        <test-method signature="verifyLoginPageUrlTest()[pri:2, instance:com.qa.spinent.testpages.LoginPageTest@35aea049]" started-at="2021-05-16T12:47:38 CEST" name="verifyLoginPageUrlTest" description="LOGIN PAGE URL FUNCTIONALITY TEST" finished-at="2021-05-16T12:47:38 CEST" duration-ms="17" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginPageUrlTest -->
-        <test-method signature="verifyRedColorLoginButtonTest()[pri:3, instance:com.qa.spinent.testpages.LoginPageTest@35aea049]" started-at="2021-05-16T12:47:38 CEST" name="verifyRedColorLoginButtonTest" description="VERIFICATION OF RED LOGIN-BUTTON IN THE LOGIN PAGE " finished-at="2021-05-16T12:47:39 CEST" duration-ms="715" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRedColorLoginButtonTest -->
-        <test-method signature="verifyGreenolorLoginButtonTest()[pri:4, instance:com.qa.spinent.testpages.LoginPageTest@35aea049]" started-at="2021-05-16T12:47:39 CEST" name="verifyGreenolorLoginButtonTest" description="VERIFICATION OF GREEN LOGIN-BUTTON IN THE LOGIN PAGE " finished-at="2021-05-16T12:47:39 CEST" duration-ms="601" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyGreenolorLoginButtonTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.spinent.testpages.LoginPageTest@35aea049]" started-at="2021-05-16T12:47:40 CEST" name="tearDown" finished-at="2021-05-16T12:47:41 CEST" duration-ms="728" status="PASS">
+        </test-method> <!-- verifyChosenStatement -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.alphasense.testpages.Test_01_AlphaSenseFrontendPageTest@49070868]" name="tearDown" is-config="true" duration-ms="791" started-at="2022-01-15T13:59:46 CET" finished-at="2022-01-15T13:59:47 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.spinent.testpages.LoginPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.qa.alphasense.testpages.Test_01_AlphaSenseFrontendPageTest -->
+      <class name="com.qa.alphasense.testpages.Test_02_AlphaSenseAPITests">
+        <test-method status="PASS" signature="checkingStatus()[pri:1, instance:com.qa.alphasense.testpages.Test_02_AlphaSenseAPITests@473b46c3]" name="checkingStatus" duration-ms="1733" started-at="2022-01-15T13:59:44 CET" description="Page Status Code Test" finished-at="2022-01-15T13:59:46 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkingStatus -->
+        <test-method status="PASS" signature="verificationOfApplicationWebsite()[pri:2, instance:com.qa.alphasense.testpages.Test_02_AlphaSenseAPITests@473b46c3]" name="verificationOfApplicationWebsite" duration-ms="275" started-at="2022-01-15T13:59:46 CET" description="Application Website Name" finished-at="2022-01-15T13:59:46 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verificationOfApplicationWebsite -->
+        <test-method status="FAIL" signature="postingJsonData(int)[pri:3, instance:com.qa.alphasense.testpages.Test_02_AlphaSenseAPITests@473b46c3]" name="postingJsonData" duration-ms="0" started-at="2022-01-15T13:59:46 CET" description="Attempt of Posting Json File Without Authantication Code (Negative Test)" finished-at="2022-01-15T13:59:46 CET">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Cannot inject @Test annotated Method [postingJsonData] with [int].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Cannot inject @Test annotated Method [postingJsonData] with [int].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:437)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:351)
+at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:875)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:789)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postingJsonData -->
+      </class> <!-- com.qa.alphasense.testpages.Test_02_AlphaSenseAPITests -->
+    </test> <!-- Alpha Sense Test -->
+  </suite> <!-- Alpha Sense Test -->
 </testng-results>

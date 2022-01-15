@@ -34,6 +34,7 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -47,7 +48,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>May 4, 2021 05:59:15 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Jan 15, 2022 01:59:07 PM</span>
 				</a>
 			</li>
 			<li>
@@ -73,6 +74,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -85,12 +87,9 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>SpinenetRegressionTestSuite</a></li>
-					<li><a href='#'>HomePageTest</a></li>
-					<li><a href='#'>AccountLogoutPageTest</a></li>
-					<li><a href='#'>LoginPageUserSecurityTest</a></li>
-					<li><a href='#'>LoginPageTest</a></li>
-					<li><a href='#'>MyReportPageTest</a></li>
+					<li><a href='#'>AlphaSenseTest</a></li>
+					<li><a href='#'>Test_01_AlphaSenseFrontendPageTest</a></li>
+					<li><a href='#'>Test_02_AlphaSenseAPITests</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -138,10 +137,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>28</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='85.714%'><span class='strong'>6</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='14.286%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -153,10 +152,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>28</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='87.5%'><span class='strong'>7</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='12.5%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -173,21 +172,21 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>verifyHomePageTitle</span>
-						<span class='test-time'>May 4, 2021 05:59:44 AM</span>
+						<span class='test-name'>searchingforAdditionalKeyword</span>
+						<span class='test-time'>Jan 15, 2022 01:59:16 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 4, 2021 05:59:44 AM</span>
-	<span class='label end-time'>May 4, 2021 05:59:44 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+180ms</span>
+	<span class='label start-time'>Jan 15, 2022 01:59:16 PM</span>
+	<span class='label end-time'>Jan 15, 2022 01:59:17 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+723ms</span>
 </div>
-	<div class='test-desc'>Home Page Title will be tested </div>
+	<div class='test-desc'>Searching for Additional Keyword </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>SpinenetRegressionTestSuite</span>
-				<span class='category label white-text'>HomePageTest</span>
+				<span class='category label white-text'>AlphaSenseTest</span>
+				<span class='category label white-text'>Test_01_AlphaSenseFrontendPageTest</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -202,7 +201,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:59:44 AM</td>
+					<td class='timestamp'>1:59:17 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -214,21 +213,21 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
-						<span class='test-name'>introToSportsTechButtonTest</span>
-						<span class='test-time'>May 4, 2021 05:59:45 AM</span>
+						<span class='test-name'>scrollTheLastFoundResult</span>
+						<span class='test-time'>Jan 15, 2022 01:59:17 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 4, 2021 05:59:45 AM</span>
-	<span class='label end-time'>May 4, 2021 05:59:46 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+872ms</span>
+	<span class='label start-time'>Jan 15, 2022 01:59:17 PM</span>
+	<span class='label end-time'>Jan 15, 2022 01:59:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+46ms</span>
 </div>
-	<div class='test-desc'>The button function will be tested to see if it is clickable or not! </div>
+	<div class='test-desc'>Scrolling To The Last Found Result </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>SpinenetRegressionTestSuite</span>
-				<span class='category label white-text'>HomePageTest</span>
+				<span class='category label white-text'>AlphaSenseTest</span>
+				<span class='category label white-text'>Test_01_AlphaSenseFrontendPageTest</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -243,7 +242,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:59:46 AM</td>
+					<td class='timestamp'>1:59:22 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -255,21 +254,21 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
-						<span class='test-name'>knowYourselfButtonTest</span>
-						<span class='test-time'>May 4, 2021 05:59:46 AM</span>
+						<span class='test-name'>clickTheLastFoundResult</span>
+						<span class='test-time'>Jan 15, 2022 01:59:22 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 4, 2021 05:59:46 AM</span>
-	<span class='label end-time'>May 4, 2021 05:59:46 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+693ms</span>
+	<span class='label start-time'>Jan 15, 2022 01:59:22 PM</span>
+	<span class='label end-time'>Jan 15, 2022 01:59:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+159ms</span>
 </div>
-	<div class='test-desc'>The button function will be tested to see if it is clickable or not! </div>
+	<div class='test-desc'>Clicking On It </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>SpinenetRegressionTestSuite</span>
-				<span class='category label white-text'>HomePageTest</span>
+				<span class='category label white-text'>AlphaSenseTest</span>
+				<span class='category label white-text'>Test_01_AlphaSenseFrontendPageTest</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -284,7 +283,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:59:46 AM</td>
+					<td class='timestamp'>1:59:24 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -296,21 +295,21 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
 					<div class='test-heading'>
-						<span class='test-name'>determineProblemsButtonTest</span>
-						<span class='test-time'>May 4, 2021 05:59:46 AM</span>
+						<span class='test-name'>switchToFrame</span>
+						<span class='test-time'>Jan 15, 2022 01:59:24 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 4, 2021 05:59:46 AM</span>
-	<span class='label end-time'>May 4, 2021 05:59:47 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+743ms</span>
+	<span class='label start-time'>Jan 15, 2022 01:59:24 PM</span>
+	<span class='label end-time'>Jan 15, 2022 01:59:44 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 20s+87ms</span>
 </div>
-	<div class='test-desc'>The button function will be tested to see if it is clickable or not! </div>
+	<div class='test-desc'>Changing Frame In Order To Verify Highlighed Result </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>SpinenetRegressionTestSuite</span>
-				<span class='category label white-text'>HomePageTest</span>
+				<span class='category label white-text'>AlphaSenseTest</span>
+				<span class='category label white-text'>Test_01_AlphaSenseFrontendPageTest</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -325,7 +324,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:59:47 AM</td>
+					<td class='timestamp'>1:59:44 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -337,21 +336,21 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
 					<div class='test-heading'>
-						<span class='test-name'>askToCustomerButtonTest</span>
-						<span class='test-time'>May 4, 2021 05:59:47 AM</span>
+						<span class='test-name'>verifyChosenStatement</span>
+						<span class='test-time'>Jan 15, 2022 01:59:44 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 4, 2021 05:59:47 AM</span>
-	<span class='label end-time'>May 4, 2021 05:59:48 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+719ms</span>
+	<span class='label start-time'>Jan 15, 2022 01:59:44 PM</span>
+	<span class='label end-time'>Jan 15, 2022 01:59:44 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+75ms</span>
 </div>
-	<div class='test-desc'>The button function will be tested to see if it is clickable or not! </div>
+	<div class='test-desc'>Verifying that chosen statement is highlighted in the document viewer </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>SpinenetRegressionTestSuite</span>
-				<span class='category label white-text'>HomePageTest</span>
+				<span class='category label white-text'>AlphaSenseTest</span>
+				<span class='category label white-text'>Test_01_AlphaSenseFrontendPageTest</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -366,7 +365,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:59:48 AM</td>
+					<td class='timestamp'>1:59:44 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -378,21 +377,21 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
 					<div class='test-heading'>
-						<span class='test-name'>generateIdeasButtonTest</span>
-						<span class='test-time'>May 4, 2021 05:59:48 AM</span>
+						<span class='test-name'>checkingStatus</span>
+						<span class='test-time'>Jan 15, 2022 01:59:44 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 4, 2021 05:59:48 AM</span>
-	<span class='label end-time'>May 4, 2021 05:59:49 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+811ms</span>
+	<span class='label start-time'>Jan 15, 2022 01:59:44 PM</span>
+	<span class='label end-time'>Jan 15, 2022 01:59:46 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+733ms</span>
 </div>
-	<div class='test-desc'>The button function will be tested to see if it is clickable or not! </div>
+	<div class='test-desc'>Page Status Code Test </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>SpinenetRegressionTestSuite</span>
-				<span class='category label white-text'>HomePageTest</span>
+				<span class='category label white-text'>AlphaSenseTest</span>
+				<span class='category label white-text'>Test_02_AlphaSenseAPITests</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -407,7 +406,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:59:49 AM</td>
+					<td class='timestamp'>1:59:46 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -417,23 +416,23 @@
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='7'>
 					<div class='test-heading'>
-						<span class='test-name'>preapareMVPButtonTest</span>
-						<span class='test-time'>May 4, 2021 05:59:49 AM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>verificationOfApplicationWebsite</span>
+						<span class='test-time'>Jan 15, 2022 01:59:46 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 4, 2021 05:59:49 AM</span>
-	<span class='label end-time'>May 4, 2021 05:59:49 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+693ms</span>
+	<span class='label start-time'>Jan 15, 2022 01:59:46 PM</span>
+	<span class='label end-time'>Jan 15, 2022 01:59:46 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+280ms</span>
 </div>
-	<div class='test-desc'>The button function will be tested to see if it is clickable or not! </div>
+	<div class='test-desc'>Application Website Name </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>SpinenetRegressionTestSuite</span>
-				<span class='category label white-text'>HomePageTest</span>
+				<span class='category label white-text'>AlphaSenseTest</span>
+				<span class='category label white-text'>Test_02_AlphaSenseAPITests</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -448,865 +447,43 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:59:49 AM</td>
+					<td class='timestamp'>1:59:46 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
-					<div class='test-heading'>
-						<span class='test-name'>givePresentationButtonTest</span>
-						<span class='test-time'>May 4, 2021 05:59:49 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 4, 2021 05:59:49 AM</span>
-	<span class='label end-time'>May 4, 2021 05:59:50 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+630ms</span>
-</div>
-	<div class='test-desc'>The button function will be tested to see if it is clickable or not! </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>SpinenetRegressionTestSuite</span>
-				<span class='category label white-text'>HomePageTest</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:59:50 AM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
-					<div class='test-heading'>
-						<span class='test-name'>belowButtonAblemsTest</span>
-						<span class='test-time'>May 4, 2021 05:59:50 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 4, 2021 05:59:50 AM</span>
-	<span class='label end-time'>May 4, 2021 05:59:51 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+660ms</span>
-</div>
-	<div class='test-desc'>The button function will be tested to see if it is clickable or not! </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>SpinenetRegressionTestSuite</span>
-				<span class='category label white-text'>HomePageTest</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:59:51 AM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
-					<div class='test-heading'>
-						<span class='test-name'>languageButtonTest</span>
-						<span class='test-time'>May 4, 2021 05:59:51 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 4, 2021 05:59:51 AM</span>
-	<span class='label end-time'>May 4, 2021 05:59:51 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+651ms</span>
-</div>
-	<div class='test-desc'>The button function will be tested to see if it is clickable or not! </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>SpinenetRegressionTestSuite</span>
-				<span class='category label white-text'>HomePageTest</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:59:51 AM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
-					<div class='test-heading'>
-						<span class='test-name'>userAccountNamesButtonTest</span>
-						<span class='test-time'>May 4, 2021 05:59:51 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 4, 2021 05:59:51 AM</span>
-	<span class='label end-time'>May 4, 2021 05:59:52 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+689ms</span>
-</div>
-	<div class='test-desc'>The button function will be tested to see if it is clickable or not! </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>SpinenetRegressionTestSuite</span>
-				<span class='category label white-text'>HomePageTest</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:59:52 AM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
-					<div class='test-heading'>
-						<span class='test-name'>printCertificateButtonTest</span>
-						<span class='test-time'>May 4, 2021 05:59:52 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 4, 2021 05:59:52 AM</span>
-	<span class='label end-time'>May 4, 2021 05:59:53 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+623ms</span>
-</div>
-	<div class='test-desc'>The button function will be tested to see if it is clickable or not! </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>SpinenetRegressionTestSuite</span>
-				<span class='category label white-text'>HomePageTest</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:59:53 AM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='13'>
-					<div class='test-heading'>
-						<span class='test-name'>logOutFunctionTest</span>
-						<span class='test-time'>May 4, 2021 05:59:53 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 4, 2021 05:59:53 AM</span>
-	<span class='label end-time'>May 4, 2021 05:59:53 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+583ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>SpinenetRegressionTestSuite</span>
-				<span class='category label white-text'>AccountLogoutPageTest</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:59:53 AM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
-					<div class='test-heading'>
-						<span class='test-name'>logOutUrlVerificationTest</span>
-						<span class='test-time'>May 4, 2021 05:59:53 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 4, 2021 05:59:53 AM</span>
-	<span class='label end-time'>May 4, 2021 05:59:53 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+9ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>SpinenetRegressionTestSuite</span>
-				<span class='category label white-text'>AccountLogoutPageTest</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:59:53 AM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
-					<div class='test-heading'>
-						<span class='test-name'>userSecurity</span>
-						<span class='test-time'>May 4, 2021 05:59:54 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 4, 2021 05:59:54 AM</span>
-	<span class='label end-time'>May 4, 2021 05:59:58 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+147ms</span>
-</div>
-	<div class='test-desc'>Testing invalid datas by sending wrong user information. Error message will be verified after sending wrong user information from the excel file. </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>SpinenetRegressionTestSuite</span>
-				<span class='category label white-text'>LoginPageUserSecurityTest</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:59:58 AM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='16'>
-					<div class='test-heading'>
-						<span class='test-name'>userSecurity</span>
-						<span class='test-time'>May 4, 2021 05:59:58 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 4, 2021 05:59:58 AM</span>
-	<span class='label end-time'>May 4, 2021 06:00:02 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+95ms</span>
-</div>
-	<div class='test-desc'>Testing invalid datas by sending wrong user information. Error message will be verified after sending wrong user information from the excel file. </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>SpinenetRegressionTestSuite</span>
-				<span class='category label white-text'>LoginPageUserSecurityTest</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>6:00:02 AM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='17'>
-					<div class='test-heading'>
-						<span class='test-name'>userSecurity</span>
-						<span class='test-time'>May 4, 2021 06:00:02 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 4, 2021 06:00:02 AM</span>
-	<span class='label end-time'>May 4, 2021 06:00:06 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+979ms</span>
-</div>
-	<div class='test-desc'>Testing invalid datas by sending wrong user information. Error message will be verified after sending wrong user information from the excel file. </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>SpinenetRegressionTestSuite</span>
-				<span class='category label white-text'>LoginPageUserSecurityTest</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>6:00:06 AM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='18'>
-					<div class='test-heading'>
-						<span class='test-name'>userSecurity</span>
-						<span class='test-time'>May 4, 2021 06:00:06 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 4, 2021 06:00:06 AM</span>
-	<span class='label end-time'>May 4, 2021 06:00:10 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+957ms</span>
-</div>
-	<div class='test-desc'>Testing invalid datas by sending wrong user information. Error message will be verified after sending wrong user information from the excel file. </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>SpinenetRegressionTestSuite</span>
-				<span class='category label white-text'>LoginPageUserSecurityTest</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>6:00:10 AM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='19'>
-					<div class='test-heading'>
-						<span class='test-name'>userSecurity</span>
-						<span class='test-time'>May 4, 2021 06:00:10 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 4, 2021 06:00:10 AM</span>
-	<span class='label end-time'>May 4, 2021 06:00:14 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+974ms</span>
-</div>
-	<div class='test-desc'>Testing invalid datas by sending wrong user information. Error message will be verified after sending wrong user information from the excel file. </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>SpinenetRegressionTestSuite</span>
-				<span class='category label white-text'>LoginPageUserSecurityTest</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>6:00:14 AM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='20'>
-					<div class='test-heading'>
-						<span class='test-name'>userSecurity</span>
-						<span class='test-time'>May 4, 2021 06:00:14 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 4, 2021 06:00:14 AM</span>
-	<span class='label end-time'>May 4, 2021 06:00:18 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+995ms</span>
-</div>
-	<div class='test-desc'>Testing invalid datas by sending wrong user information. Error message will be verified after sending wrong user information from the excel file. </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>SpinenetRegressionTestSuite</span>
-				<span class='category label white-text'>LoginPageUserSecurityTest</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>6:00:18 AM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='21'>
-					<div class='test-heading'>
-						<span class='test-name'>userSecurity</span>
-						<span class='test-time'>May 4, 2021 06:00:18 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 4, 2021 06:00:18 AM</span>
-	<span class='label end-time'>May 4, 2021 06:00:22 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+987ms</span>
-</div>
-	<div class='test-desc'>Testing invalid datas by sending wrong user information. Error message will be verified after sending wrong user information from the excel file. </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>SpinenetRegressionTestSuite</span>
-				<span class='category label white-text'>LoginPageUserSecurityTest</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>6:00:22 AM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='22'>
-					<div class='test-heading'>
-						<span class='test-name'>userSecurity</span>
-						<span class='test-time'>May 4, 2021 06:00:22 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 4, 2021 06:00:22 AM</span>
-	<span class='label end-time'>May 4, 2021 06:00:26 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+976ms</span>
-</div>
-	<div class='test-desc'>Testing invalid datas by sending wrong user information. Error message will be verified after sending wrong user information from the excel file. </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>SpinenetRegressionTestSuite</span>
-				<span class='category label white-text'>LoginPageUserSecurityTest</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>6:00:26 AM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='23'>
-					<div class='test-heading'>
-						<span class='test-name'>verifyLoginPageTitleTest</span>
-						<span class='test-time'>May 4, 2021 06:00:26 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 4, 2021 06:00:26 AM</span>
-	<span class='label end-time'>May 4, 2021 06:00:26 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+15ms</span>
-</div>
-	<div class='test-desc'>LOGIN PAGE TITLE PRESENCE FUNCTIONALITY </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>SpinenetRegressionTestSuite</span>
-				<span class='category label white-text'>LoginPageTest</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>6:00:26 AM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='24'>
-					<div class='test-heading'>
-						<span class='test-name'>verifyLoginPageUrlTest</span>
-						<span class='test-time'>May 4, 2021 06:00:26 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 4, 2021 06:00:26 AM</span>
-	<span class='label end-time'>May 4, 2021 06:00:26 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+9ms</span>
-</div>
-	<div class='test-desc'>LOGIN PAGE URL FUNCTIONALITY TEST </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>SpinenetRegressionTestSuite</span>
-				<span class='category label white-text'>LoginPageTest</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>6:00:26 AM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='25'>
-					<div class='test-heading'>
-						<span class='test-name'>verifyRedColorLoginButtonTest</span>
-						<span class='test-time'>May 4, 2021 06:00:26 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 4, 2021 06:00:26 AM</span>
-	<span class='label end-time'>May 4, 2021 06:00:26 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+597ms</span>
-</div>
-	<div class='test-desc'>VERIFICATION OF RED LOGIN-BUTTON IN THE LOGIN PAGE </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>SpinenetRegressionTestSuite</span>
-				<span class='category label white-text'>LoginPageTest</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>6:00:26 AM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='26'>
-					<div class='test-heading'>
-						<span class='test-name'>verifyGreenolorLoginButtonTest</span>
-						<span class='test-time'>May 4, 2021 06:00:26 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 4, 2021 06:00:26 AM</span>
-	<span class='label end-time'>May 4, 2021 06:00:27 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+580ms</span>
-</div>
-	<div class='test-desc'>VERIFICATION OF GREEN LOGIN-BUTTON IN THE LOGIN PAGE </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>SpinenetRegressionTestSuite</span>
-				<span class='category label white-text'>LoginPageTest</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>6:00:27 AM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='27'>
-					<div class='test-heading'>
-						<span class='test-name'>verifyMyReportPageTableVisibility</span>
-						<span class='test-time'>May 4, 2021 06:00:27 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 4, 2021 06:00:27 AM</span>
-	<span class='label end-time'>May 4, 2021 06:00:28 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+577ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>SpinenetRegressionTestSuite</span>
-				<span class='category label white-text'>MyReportPageTest</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>6:00:28 AM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='28'>
-					<div class='test-heading'>
-						<span class='test-name'>verifyMyReportPageTable</span>
-						<span class='test-time'>May 4, 2021 06:00:28 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 4, 2021 06:00:28 AM</span>
-	<span class='label end-time'>May 4, 2021 06:00:28 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+7ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>SpinenetRegressionTestSuite</span>
-				<span class='category label white-text'>MyReportPageTest</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>6:00:28 AM</td>
-					<td class='step-details'>Test passed</td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>1:59:46 PM</td>
+					<td class='step-details'><pre>org.testng.TestNGException: 
+Cannot inject @Test annotated Method [postingJsonData] with [int].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:437)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:351)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:875)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:789)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre><img data-featherlight='C:\Users\muham\eclipse-workspace\ASenseProject/screenshots/1642251586580.png' width='10%' src='C:\Users\muham\eclipse-workspace\ASenseProject/screenshots/1642251586580.png' data-src='C:\Users\muham\eclipse-workspace\ASenseProject/screenshots/1642251586580.png'></td>
 				</tr>
 			</tbody>
 		</table>
@@ -1365,14 +542,79 @@
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>SpinenetRegressionTestSuite</span>
+						<span class='category-name'>AlphaSenseTest</span>
 						<span class='category-status right'>
-							<span class='label pass'>28</span>
+							<span class='label pass'>6</span>
+							<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 28</span>
+							<span class='label green accent-4 white-text'>Passed: 6</span>
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jan 15, 2022 01:59:16 PM</td>
+										<td class='linked' test-id='1'>searchingforAdditionalKeyword</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 15, 2022 01:59:17 PM</td>
+										<td class='linked' test-id='2'>scrollTheLastFoundResult</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 15, 2022 01:59:22 PM</td>
+										<td class='linked' test-id='3'>clickTheLastFoundResult</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 15, 2022 01:59:24 PM</td>
+										<td class='linked' test-id='4'>switchToFrame</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 15, 2022 01:59:44 PM</td>
+										<td class='linked' test-id='5'>verifyChosenStatement</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 15, 2022 01:59:44 PM</td>
+										<td class='linked' test-id='6'>checkingStatus</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 15, 2022 01:59:46 PM</td>
+										<td class='linked' test-id='7'>verificationOfApplicationWebsite</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>Test_01_AlphaSenseFrontendPageTest</span>
+						<span class='category-status right'>
+							<span class='label pass'>5</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 5</span>
 							
 							
 						</div>
@@ -1388,143 +630,28 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 4, 2021 05:59:44 AM</td>
-										<td class='linked' test-id='1'>verifyHomePageTitle</td>
+										<td>Jan 15, 2022 01:59:16 PM</td>
+										<td class='linked' test-id='1'>searchingforAdditionalKeyword</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>May 4, 2021 05:59:45 AM</td>
-										<td class='linked' test-id='2'>introToSportsTechButtonTest</td>
+										<td>Jan 15, 2022 01:59:17 PM</td>
+										<td class='linked' test-id='2'>scrollTheLastFoundResult</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>May 4, 2021 05:59:46 AM</td>
-										<td class='linked' test-id='3'>knowYourselfButtonTest</td>
+										<td>Jan 15, 2022 01:59:22 PM</td>
+										<td class='linked' test-id='3'>clickTheLastFoundResult</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>May 4, 2021 05:59:46 AM</td>
-										<td class='linked' test-id='4'>determineProblemsButtonTest</td>
+										<td>Jan 15, 2022 01:59:24 PM</td>
+										<td class='linked' test-id='4'>switchToFrame</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>May 4, 2021 05:59:47 AM</td>
-										<td class='linked' test-id='5'>askToCustomerButtonTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 05:59:48 AM</td>
-										<td class='linked' test-id='6'>generateIdeasButtonTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 05:59:49 AM</td>
-										<td class='linked' test-id='7'>preapareMVPButtonTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 05:59:49 AM</td>
-										<td class='linked' test-id='8'>givePresentationButtonTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 05:59:50 AM</td>
-										<td class='linked' test-id='9'>belowButtonAblemsTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 05:59:51 AM</td>
-										<td class='linked' test-id='10'>languageButtonTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 05:59:51 AM</td>
-										<td class='linked' test-id='11'>userAccountNamesButtonTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 05:59:52 AM</td>
-										<td class='linked' test-id='12'>printCertificateButtonTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 05:59:53 AM</td>
-										<td class='linked' test-id='13'>logOutFunctionTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 05:59:53 AM</td>
-										<td class='linked' test-id='14'>logOutUrlVerificationTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 05:59:54 AM</td>
-										<td class='linked' test-id='15'>userSecurity</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 05:59:58 AM</td>
-										<td class='linked' test-id='16'>userSecurity</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 06:00:02 AM</td>
-										<td class='linked' test-id='17'>userSecurity</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 06:00:06 AM</td>
-										<td class='linked' test-id='18'>userSecurity</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 06:00:10 AM</td>
-										<td class='linked' test-id='19'>userSecurity</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 06:00:14 AM</td>
-										<td class='linked' test-id='20'>userSecurity</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 06:00:18 AM</td>
-										<td class='linked' test-id='21'>userSecurity</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 06:00:22 AM</td>
-										<td class='linked' test-id='22'>userSecurity</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 06:00:26 AM</td>
-										<td class='linked' test-id='23'>verifyLoginPageTitleTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 06:00:26 AM</td>
-										<td class='linked' test-id='24'>verifyLoginPageUrlTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 06:00:26 AM</td>
-										<td class='linked' test-id='25'>verifyRedColorLoginButtonTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 06:00:26 AM</td>
-										<td class='linked' test-id='26'>verifyGreenolorLoginButtonTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 06:00:27 AM</td>
-										<td class='linked' test-id='27'>verifyMyReportPageTableVisibility</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 06:00:28 AM</td>
-										<td class='linked' test-id='28'>verifyMyReportPageTable</td>
+										<td>Jan 15, 2022 01:59:44 PM</td>
+										<td class='linked' test-id='5'>verifyChosenStatement</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -1534,15 +661,16 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>HomePageTest</span>
+						<span class='category-name'>Test_02_AlphaSenseAPITests</span>
 						<span class='category-status right'>
-							<span class='label pass'>12</span>
+							<span class='label pass'>1</span>
+							<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 12</span>
-							
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -1557,260 +685,14 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 4, 2021 05:59:44 AM</td>
-										<td class='linked' test-id='1'>verifyHomePageTitle</td>
+										<td>Jan 15, 2022 01:59:44 PM</td>
+										<td class='linked' test-id='6'>checkingStatus</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>May 4, 2021 05:59:45 AM</td>
-										<td class='linked' test-id='2'>introToSportsTechButtonTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 05:59:46 AM</td>
-										<td class='linked' test-id='3'>knowYourselfButtonTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 05:59:46 AM</td>
-										<td class='linked' test-id='4'>determineProblemsButtonTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 05:59:47 AM</td>
-										<td class='linked' test-id='5'>askToCustomerButtonTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 05:59:48 AM</td>
-										<td class='linked' test-id='6'>generateIdeasButtonTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 05:59:49 AM</td>
-										<td class='linked' test-id='7'>preapareMVPButtonTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 05:59:49 AM</td>
-										<td class='linked' test-id='8'>givePresentationButtonTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 05:59:50 AM</td>
-										<td class='linked' test-id='9'>belowButtonAblemsTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 05:59:51 AM</td>
-										<td class='linked' test-id='10'>languageButtonTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 05:59:51 AM</td>
-										<td class='linked' test-id='11'>userAccountNamesButtonTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 05:59:52 AM</td>
-										<td class='linked' test-id='12'>printCertificateButtonTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>AccountLogoutPageTest</span>
-						<span class='category-status right'>
-							<span class='label pass'>2</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 2</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 4, 2021 05:59:53 AM</td>
-										<td class='linked' test-id='13'>logOutFunctionTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 05:59:53 AM</td>
-										<td class='linked' test-id='14'>logOutUrlVerificationTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>LoginPageUserSecurityTest</span>
-						<span class='category-status right'>
-							<span class='label pass'>8</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 8</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 4, 2021 05:59:54 AM</td>
-										<td class='linked' test-id='15'>userSecurity</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 05:59:58 AM</td>
-										<td class='linked' test-id='16'>userSecurity</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 06:00:02 AM</td>
-										<td class='linked' test-id='17'>userSecurity</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 06:00:06 AM</td>
-										<td class='linked' test-id='18'>userSecurity</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 06:00:10 AM</td>
-										<td class='linked' test-id='19'>userSecurity</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 06:00:14 AM</td>
-										<td class='linked' test-id='20'>userSecurity</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 06:00:18 AM</td>
-										<td class='linked' test-id='21'>userSecurity</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 06:00:22 AM</td>
-										<td class='linked' test-id='22'>userSecurity</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>LoginPageTest</span>
-						<span class='category-status right'>
-							<span class='label pass'>4</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 4</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 4, 2021 06:00:26 AM</td>
-										<td class='linked' test-id='23'>verifyLoginPageTitleTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 06:00:26 AM</td>
-										<td class='linked' test-id='24'>verifyLoginPageUrlTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 06:00:26 AM</td>
-										<td class='linked' test-id='25'>verifyRedColorLoginButtonTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 06:00:26 AM</td>
-										<td class='linked' test-id='26'>verifyGreenolorLoginButtonTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>MyReportPageTest</span>
-						<span class='category-status right'>
-							<span class='label pass'>2</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 2</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 4, 2021 06:00:27 AM</td>
-										<td class='linked' test-id='27'>verifyMyReportPageTableVisibility</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2021 06:00:28 AM</td>
-										<td class='linked' test-id='28'>verifyMyReportPageTable</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>Jan 15, 2022 01:59:46 PM</td>
+										<td class='linked' test-id='7'>verificationOfApplicationWebsite</td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -1829,6 +711,97 @@
 	</div>
 </div>
 <!-- category view -->
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>org.testng.TestNGException</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Jan 15, 2022 01:59:46 PM</td>
+                                                        <td class='linked' test-id='7'>verificationOfApplicationWebsite</td>
+                                                        <td><pre><pre>org.testng.TestNGException: 
+Cannot inject @Test annotated Method [postingJsonData] with [int].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:437)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:351)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:875)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:789)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
+        </div>
+    </div>
+</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -1838,31 +811,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>28</div>
+					<div class='panel-lead'>7</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>28</div>
+					<div class='panel-lead'>8</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>May 4, 2021 05:59:15 AM</div>
+					<div class='panel-lead'>Jan 15, 2022 01:59:07 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>May 4, 2021 06:00:31 AM</div>
+			 		<div class='panel-lead'>Jan 15, 2022 01:59:47 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 1m 16s+376ms</div>
+					<div class='panel-lead'>0h 0m 40s+217ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -1878,8 +851,17 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>SpinenetRegressionTestSuite</td>
-							<td>28</td>
+							<td>AlphaSenseTest</td>
+							<td>6</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									85.714%
+							</td>
+						</tr>
+						<tr>
+							<td>Test_01_AlphaSenseFrontendPageTest</td>
+							<td>5</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -1887,48 +869,12 @@
 							</td>
 						</tr>
 						<tr>
-							<td>HomePageTest</td>
-							<td>12</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>AccountLogoutPageTest</td>
-							<td>2</td>
-							<td>0</td>
+							<td>Test_02_AlphaSenseAPITests</td>
+							<td>1</td>
+							<td>1</td>
 							<td>0</td>
 							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>LoginPageUserSecurityTest</td>
-							<td>8</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>LoginPageTest</td>
-							<td>4</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>MyReportPageTest</td>
-							<td>2</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
+									50%
 							</td>
 						</tr>
 					</table>
@@ -1944,22 +890,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 28,
-				failParent: 0,
+				passParent: 6,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				
-				passChild: 28,
-				failChild: 0,
+				passChild: 7,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 1,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,
